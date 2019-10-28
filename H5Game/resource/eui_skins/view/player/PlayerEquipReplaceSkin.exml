@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerEquipReplaceSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin1 skinName="Win2Skin" left="0" right="0" top="0" bottom="0" bgH="937" titleS="装 备 更 换"/>
+    <e:Group anchorOffsetX="0" horizontalCenter="0" anchorOffsetY="0" height="937" verticalCenter="0" touchEnabled="false">   
+        <e:Label text="当前装备" y="76.56" fontFamily="KaiTi" horizontalCenter="0.5" textColor="0x0715f9" size="25" bold="true" stroke="0.5"/>
+			<ns1:ReplaceItemRender id="c" skinName="ReplaceItemSkin" y="107" horizontalCenter="0"/>
+        <e:Label text="选择装备" y="355.32" fontFamily="KaiTi" size="24" textColor="0xfc0707" bold="true" stroke="0.5" horizontalCenter="0.5"/>
+        <e:ViewStack id="viewStack" width="590" height="535.27" anchorOffsetX="0" anchorOffsetY="0" selectedIndex="0" horizontalCenter="0" y="388">
+            <e:Group id="group" name="Group" anchorOffsetX="0" anchorOffsetY="0" visible="true" horizontalCenter="0">
+                <e:Scroller id="itemScroller" y="6" visible="true" scrollPolicyH="off" horizontalCenter="0" anchorOffsetY="0" height="522">
+                    <e:List id="itemList" itemRendererSkinName="ReplaceItemSkin" visible="true" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
+                        <e:ArrayCollection>
+                            <e:Array>
+                            </e:Array>
+                        </e:ArrayCollection>
+                        <e:layout>
+                            <e:TileLayout requestedColumnCount="1" horizontalGap="10" paddingLeft="0" verticalGap="10"/>
+                        </e:layout>
+                    </e:List>
+                </e:Scroller>
+            </e:Group>
+            
+        </e:ViewStack>
+			<e:Image y="321" source="圆角矩形-3" scale9Grid="115,0,25,3" left="20" right="20"/>
+    </e:Group>
+</e:Skin>

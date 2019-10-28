@@ -1,0 +1,30 @@
+var arr = getCurrDirListArr();
+var info = {srcSize:0,size:0}
+checkArr(arr);
+function checkArr(arr){
+	for(var i:int = arr.length-1;i>=0;i--){
+    	var f = arr[i];
+		if(f.isDirectory){
+			checkArr(f.getDirectoryListing());
+		}else{
+			var fname = f.name.substr(f.name.length-4);
+    		if(".png" == fname){
+				info.srcSize += f.size;
+       			openImage(f.nativePath,true);
+       			setExport(1);
+				//图片类型：jpegXR、jpeg、png、pngXR、webp、atf
+				//saveImgAS(path:String,imgType:String = "png",options:int = 80,parameter:String = "")
+        		saveImgAS(f.nativePath,"TinyPNG",80,"cKlr70cGYVGR2g18njWmmwW2sNNfh3Mz",saveFinRet);
+				//saveImgAS(f.nativePath,"png",75,"",saveFinRet);
+    		}
+		}
+	}	
+}
+function saveFinRet(f){
+	info.size += f.size;
+}
+checkHoldRet(fin);
+function fin(){
+	var size = formatByteArraySize(info.srcSize-info.size);
+	alert("完成！总共减少了:"+size+" 大小")
+}

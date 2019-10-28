@@ -1,0 +1,25 @@
+package com.rt.log;
+
+public class LogInfo {
+
+	String queueName;
+
+	String message;
+
+	public String getQueueName() {
+		return queueName;
+	}
+
+	public void setQueueName(String queueName) {
+		this.queueName = queueName;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+}

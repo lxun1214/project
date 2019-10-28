@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{ font-family:"微软雅黑", Arial;font-size:12px; color:#434343; }
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none;color:#434343;}
+a:hover,a:active,a:focus{text-decoration:underline}
+.blind{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;visibility:hidden;font-size:0; line-height:0}
+body{ background: url(../area.gif) repeat; overflow:hidden;}
+#wrap{ width:100%; }
+#container{width:100%; margin:0 auto; position:relative;}
+#header{ width:1001px; height:110px; margin:0 auto; overflow:hidden;}
+.logo{ background:url(../logo.png) no-repeat; width:442px; height:52px; margin-left:5px; margin-top:50px; display:block;}
+.banner{ background:url(../banner.jpg) 50% 50% no-repeat;  width:1920px; height:437px;position: absolute;left:50%;margin-left: -960px; overflow:hidden;}
+.bannerin{ width:1001px; height:437px; margin:0 auto; position:relative}
+.inputbox{ width:300px; height:200px; position:absolute; right:25px; top:150px;}
+.inputbox input{ position:absolute; width:200px; height:26px; line-height:26px;left:60px; border:none; background:none; font-size:14px; color:#fff;}
+.name{ top:17px;  }
+.passward{ top:72px; }
+.login_btn{ width:250px; height:40px; display:block; position:absolute; top:120px; left:26px; }
+.newlist{width:1001px; margin:0 auto; overflow:hidden; margin-top:450px;}
+.newlist li{ width:300px; float:left; height:30px; line-height:30px; background:url(../point.gif) 1px 12px no-repeat; margin-left:20px; padding-left:10px;}
+#footer{ width:100%; height:35px; line-height:35px; text-align:center; position:fixed;bottom:0px; background:#d4d3d4}
+input[type="text"],input[type="password"]{padding:0;}

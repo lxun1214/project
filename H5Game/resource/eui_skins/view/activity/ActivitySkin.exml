@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ActivitySkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="fltitle"/>
+	<e:Group id="activity" width="650" anchorOffsetY="0" height="1047" y="132" anchorOffsetX="0" horizontalCenter="0">
+		<e:Scroller width="640" height="80" anchorOffsetY="0" anchorOffsetX="0" scrollPolicyV="off" scrollPolicyH="on" x="5">
+			<e:Group id="tabBar" width="860" height="66" anchorOffsetY="0" x="-9" y="-1">
+				<ns1:ToggleBtn01 label="" horizontalCenter="0" verticalCenter="0" skinName="ToBtn000Skin" s0="activity3" s1="activity3" scaleX="0.9" scaleY="0.9">
+				</ns1:ToggleBtn01>
+				<ns1:ToggleBtn01 label="" horizontalCenter="0" verticalCenter="0" x="0" y="0" skinName="ToBtn000Skin" s0="activity2" s1="activity2" scaleX="0.9" scaleY="0.9">
+				</ns1:ToggleBtn01>
+				<ns1:ToggleBtn01 label="" horizontalCenter="0" verticalCenter="0" x="0" y="0" skinName="ToBtn000Skin" s0="activity6" s1="activity6" scaleX="0.9" scaleY="0.9">
+				</ns1:ToggleBtn01>
+				<ns1:ToggleBtn01 label="" horizontalCenter="0" verticalCenter="0" x="0" y="0" skinName="ToBtn000Skin" s0="activity4" s1="activity4" scaleX="0.9" scaleY="0.9">
+				</ns1:ToggleBtn01>
+				<ns1:ToggleBtn01 label="" horizontalCenter="0" verticalCenter="0" x="10" y="10" skinName="ToBtn000Skin" s0="biaoqian_0004_兑换" s1="biaoqian_0004_兑换" scaleX="0.9" scaleY="0.9"/>
+				<e:layout>
+					<e:HorizontalLayout gap="7" verticalAlign="bottom" horizontalAlign="center"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="viewStack" name="投资计划" scaleX="1" scaleY="1" anchorOffsetY="0" height="960" y="85" width="650" horizontalCenter="0">
+			<ns1:ContinueLogin skinName="ActivityPanelSkin"/>
+			<ns1:StageAward id="stageAward" horizontalCenter="0" skinName="ActivityPanelSkin" visible="false"/>
+			<ns1:InvestPlan id="investPlan" width="650" height="977" horizontalCenter="0" skinName="InvestPlanSkin" visible="false"/>
+			<ns1:ConsumeGift id="consumeGift" width="650" height="977" horizontalCenter="0" skinName="ActivityPanelSkin" visible="false"/>
+			<ns1:CdKeyPanel skinName="CdKeySkin"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

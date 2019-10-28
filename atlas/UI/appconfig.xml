@@ -1,0 +1,5 @@
+<appconfig>
+  <texturelist useextension="false"/>
+  <texturemerge gap="1" sizemode="free" layoutmath="3" extend="0"/>
+  <export scale="1"/>
+</appconfig>

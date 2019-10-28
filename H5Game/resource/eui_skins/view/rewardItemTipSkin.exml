@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="rewardItemTipSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg" source="tipsBg" anchorOffsetY="0" scale9Grid="86,49,520,300" y="0" x="0" width="582" anchorOffsetX="0" height="446"/>
+		<ns1:ItemIcon id="itemIcon" skinName="ItemIconSkin" x="220" y="78" scaleX="1" scaleY="1"/>
+		<e:Image id="item" width="100" height="90" x="226" y="90" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="nn" text="" x="161" y="37" size="26" anchorOffsetX="0" width="130" textAlign="center" anchorOffsetY="0" height="43"/>
+		<e:Label id="l3" text="属性" x="63" y="223" size="24" textAlign="center" anchorOffsetX="0" width="424" anchorOffsetY="0" height="60"/>
+		<e:Button id="btn2" label="确定" skinName="Btn1Skin" icon="" x="207" y="307" height="64"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FirstChargeSkin" width="750" height="1033" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image source="首充_png" x="0" y="0"/>
+		<e:Button id="newCloseBtn00" label="" y="104" horizontalCenter="278" skinName="CloseBtn00"/>
+		<e:DataGroup id="gd" width="501" height="284" anchorOffsetY="0" anchorOffsetX="0" y="501" x="126">
+			<e:layout>
+			<e:TileLayout requestedRowCount="2" requestedColumnCount="4" horizontalGap="19" verticalGap="40" horizontalAlign="center"/>
+			</e:layout>
+		</e:DataGroup>
+		<e:Button id="getBtn" label="充 值" x="272" y="868" skinName="Btn007Skin">
+		</e:Button>
+	</e:Group>
+</e:Skin>

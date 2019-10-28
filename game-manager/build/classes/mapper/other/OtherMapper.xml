@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.springmvc.dao.other.OtherMapper">
+
+
+
+
+	<select id="listSevenDataPO" resultType="cn.springmvc.model.po.SevenDataPO">
+		SELECT
+	count(infor_id) AS num,
+	DATE_FORMAT(create_date, '%Y-%m-%d') AS dateString
+FROM
+	poster_infor
+WHERE
+	DATE_FORMAT(create_date, '%Y-%m-%d') >= #{minDate} 
+GROUP BY
+	DATE_FORMAT(create_date, '%Y-%m-%d')
+	</select>
+	
+	
+	<select id="maxMallChangePriceId" resultType="java.lang.Integer">
+		SELECT MAX(create_time) from mall_change_price where order_channel = #{orderChannel}
+	</select>
+
+	
+
+</mapper>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailRenderSkin" width="101" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scale9Grid="25,13,5,84" touchEnabled="false" source="em15"/>
+	<e:Label id="l0" text="已读" touchEnabled="false" y="0" left="0" right="0" textAlign="right" size="22" textColor="0xF70707" bold="true" fontFamily="KaiTi"/>
+	<e:Label id="l1" text="系统邮件" touchEnabled="false" y="91" left="0" right="0" textAlign="center" size="22" bold="true" fontFamily="KaiTi" textColor="0x090df4"/>
+</e:Skin>

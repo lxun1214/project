@@ -1,0 +1,1 @@
+{"version":3,"file":"ConsumeGift.js","sourceRoot":"","sources":["../../../src/baseUI/activity/ConsumeGift.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,kBAAkB;AAClB;IAA0B,+BAAiB;IAC1C;eACC,iBAAO;IACR,CAAC;IACM,oCAAc,GAArB;QAEC,iBAAM,cAAc,WAAE,CAAC;QACvB,IAAI,CAAC,UAAU,GAAG,WAAW,CAAC,YAAY,CAAC;IAC5C,CAAC;IACF,kBAAC;AAAD,CAAC,AATD,CAA0B,iBAAiB,GAS1C;AATK,UAAA,WAAW,0BAShB,CAAA"}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PVPSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="jjctitle"/>
+	<e:Image y="132" horizontalCenter="0" source="pvp0_png"/>
+	<e:Group anchorOffsetY="0" horizontalCenter="0" y="1003">
+		<e:Image source="pvp03" horizontalCenter="-1" x="0" scaleX="1" scaleY="1"/>
+		<e:Label id="l0" text="当前排名：99999" size="22" scaleX="1" scaleY="1" verticalCenter="0" textColor="0xede4b3" horizontalCenter="-222"/>
+		<e:Label text="每日奖励:" scaleX="1" scaleY="1" size="22" verticalCenter="0" textColor="0x11f714" horizontalCenter="6.5"/>
+		<e:Label id="l2" text="" x="517" scaleX="1" scaleY="1" size="22" verticalCenter="0"/>
+		<e:DataGroup id="l1" y="6" itemRendererSkinName="AwardShowSkin" horizontalCenter="180" width="240">
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:DataGroup>
+	</e:Group>
+	<e:Group y="146" horizontalCenter="195.5">
+		<e:Image source="pvp08" x="3" y="0"/>
+		<e:Label text="挑战次数:" size="22" id="l4" textAlign="left" x="7" y="56" textColor="0xede4b3" fontFamily="KaiTi"/>
+		<e:Label id="l3" text="我的战斗力:999999" size="22" textAlign="left" x="7" y="20" textColor="0xede4b3" fontFamily="KaiTi"/>
+	</e:Group>
+	<ns1:PVPRender id="r2" y="336" skinName="PVPVoSkin" horizontalCenter="161"/>
+	<ns1:PVPRender id="r1" y="554" skinName="PVPVoSkin" horizontalCenter="-166"/>
+	<ns1:PVPRender id="r0" skinName="PVPVoSkin" horizontalCenter="-156" top="141"/>
+	<e:Button id="btn" label="" skinName="Btn002Skin" icon="pvp01" bottom="180" horizontalCenter="-140"/>
+	<e:Button id="btn0" label="" skinName="Btn002Skin" icon="领取" bottom="180" horizontalCenter="140"/>
+</e:Skin>

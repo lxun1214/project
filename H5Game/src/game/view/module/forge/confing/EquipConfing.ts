@@ -1,0 +1,33 @@
+interface EquipConfing {
+	itemId;
+    itemQuality;
+    nextId;
+    heroType;
+    rank;
+    equipCoordinate;
+    specialEffect;
+    equipEffectID;
+    equipScore;
+    power;
+    intellect;
+    alacrity;
+    physique;
+    attackInit;
+    armorInit;
+    magicAttack;
+    magicArmorInit;
+    critRate;
+    critDamage;
+    blood;
+    attackSpeed;
+    attackRange;
+    movingSpeed;
+    powerQuality;
+    intellectQuality;
+    alacrityQuality;
+    physiqueQuality;
+    initialScore;
+    growScore;
+    reinforcedEquipmentStone;
+    fenjieEquipmentStone;
+}

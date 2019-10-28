@@ -1,0 +1,1077 @@
+//GM
+message GmRequest_100{
+	required string command = 1;
+	optional string parameter = 2;
+}
+
+//心跳
+message HeartBeatRequest_10000{
+	
+}
+
+message HeartBeatResponse_20000{
+	
+}
+
+//登陆游戏
+message LoginRequest_10001{
+	required int64 userId = 1; 
+	required string token = 2;
+	required int32 serverId = 3;
+}
+
+
+message LoginResponse_20001{
+	optional PbPlayerInfo playerInfo = 1;
+	//服务器当前时间戳
+	required int64 nowTime = 2;
+}
+
+//创建角色
+message CreatePlayerRequest_10002{
+	required string playerName = 1;
+	//职业id
+	required int32 jobId = 2;
+	required int32 sex = 3;
+}
+
+
+message CreatePlayerResponse_20002{
+	required PbPlayerInfo playerInfo = 1;
+}
+
+//请求背包列表
+message GetBagRequest_10003{
+	
+}
+
+message GetBagResponse_20003{
+	//道具列表
+	repeated PbItemInfo items = 1;
+}
+
+//过关
+message ClearanceRequest_10004{
+	
+}
+
+message ClearanceResponse_20004{
+	//服务器验证是否成功，为false则数据异常
+	required bool isSuccess = 1;
+	//下一关卡id
+	optional int32 nextId = 2;
+	//当前等级经验
+	optional int32 exp = 3;
+	//等级
+	optional int32 level = 4;
+	//解锁宝石槽的装备栏
+	repeated int32 unlockColumns = 5;
+	//解锁的装备栏的宝石槽
+	repeated PbGemGrooveInfos unlockGemGrooves = 6;
+	//获得道具(其他如果要显示获得金币，经验客户端读表即可)
+	repeated PbBaseItemInfo rewardItems = 7;
+}
+
+//死亡
+message PlayerDieRequest_10005{
+	
+}
+
+message PlayerDieResponse_20005{
+	//返回上一关id
+	required int32 lastId = 1;
+}
+
+//技能升级
+message UpgradeSkillRequest_10006{
+	required int32 skillTab = 1;
+}
+
+message UpgradeSkillResponse_20006{
+	required bool isSuccess = 1;
+	//升级后的技能
+	optional int32 nextSkillTab = 2;	
+}
+
+//技能栏替换技能
+message ChangeColumnSkillRequest_10007{
+	required int32 skillTab = 1;
+	//替换掉的技能tap，没有发0
+	required int32 loc = 2;
+}
+
+message ChangeColumnSkillResponse_20007{
+	required bool isSuccess = 1;
+}
+
+//穿装备
+message WearEquipRequest_10008{
+	required int64 uuid = 1;
+}
+
+message WearEquipResponse_20008{
+         //装备变化
+	required PbBagChangeInfo bagChangeInfo = 1;
+	required int32 loc = 2;
+}
+
+//装备升级，必须装备以后才可以升级（策划需求）
+message UpgradeEquipRequest_10009{
+	required int32 itemId = 1;
+}
+
+message UpgradeEquipResponse_20009{
+	required bool isSuccess = 1;
+}
+
+//装备升阶，必须装备以后才可以升阶（策划需求）
+message ReinforcedEquipRequest_10010{
+	required int32 itemId = 1;
+}
+
+message ReinforcedEquipResponse_20010{
+	required bool isSuccess = 1;
+}
+
+//重生（到达11关以后才可以重生）
+message RebirthRequest_10011{
+	
+}
+
+//重生返回，人物等级重置1级，装备等级重置为1级，关卡回到第1关，人物经验、金币清零
+message RebirthResponse_20011{
+     required bool isSuccess = 1;
+     //isSuccess成功 返回
+     optional PbPlayerInfo playerInfo = 2;
+}
+
+
+
+//装备熔炼分解
+message DecomposeEquipmentRequest_10012{
+        //已选择装备的id集合(不是itemId,是uuid的集合)
+	repeated int64 uuids = 1;
+}
+
+//装备熔炼分解返回
+message DecomposeEquipmentResponse_20012{
+	required bool isSuccess = 1;
+}
+
+
+//商城购买商品
+message BuyGoodsRequest_10013{
+        //商城商品ID
+	required int32 seqId = 1;
+	//数量
+	required int32 num = 2;
+}
+
+//商城购买商品返回（如果是限制购买次数的商品，购买后需要客户端自行储存添加）
+message BuyGoodsResponse_20013{
+       required bool isSuccess = 1;
+        //新增返回购买的商品ID
+	required int32 seqId = 2;
+
+}
+
+//宝石镶嵌(包含替换)
+message GemMountRequest_10014{
+	//装备栏部位
+	required int32 columnLoc = 1;
+	//宝石槽部位
+	required int32 grooveLoc = 2;
+	//镶嵌的宝石唯一id
+	required int64 uuid = 3;
+}
+
+message GemMountResponse_20014{
+	required bool isSuccess = 1;
+	//镶嵌宝石，成功返回
+	optional int32 itemId = 2;
+}
+
+//宝石摘除
+message GemRemoveRequest_10015{
+	//装备栏部位
+	required int32 columnLoc = 1;
+	//宝石槽部位
+	required int32 grooveLoc = 2;
+}
+
+message GemRemoveResponse_20015{
+	required bool isSuccess = 1;
+	//装备栏部位
+	optional int32 columnLoc = 2;
+	//宝石槽部位
+	optional int32 grooveLoc = 3;
+}
+
+//合成背包中宝石
+message GemComposeInBagRequest_10016{
+	//宝石id
+	required int32 itemId = 1;
+}
+
+message GemComposeInBagResponse_20016{
+        required bool isSuccess = 1;
+}
+
+//合成镶嵌在宝石槽中宝石
+message GemComposeInGrooveRequest_10017{
+	//装备栏部位
+	required int32 columnLoc = 1;
+	//宝石槽部位
+	required int32 grooveLoc = 2;
+}
+
+message GemComposeInGrooveResponse_20017{
+	required bool isSuccess = 1;
+	//装备栏部位
+	required int32 columnLoc = 2;
+	//宝石槽部位
+	required int32 grooveLoc = 3;
+	//升级成功后的宝石ID
+	optional int32 gemId = 4;
+
+}
+
+
+//激活神器
+message ActivationArtifactRequest_10018{
+	//神器物品id
+	required int32 itemId = 1;
+}
+
+//激活神器返回
+message ActivationArtifactResponse_20018{
+         required bool isSuccess = 1;
+	 //神器物品ID
+	 optional int32 itemId = 2;
+
+}
+
+
+//神器升阶
+message ReinforcedArtifactRequest_10019{
+	//神器物品id
+	required int32 itemId = 1;
+}
+
+//神器升阶返回
+message ReinforcedArtifactResponse_20019{
+         required bool isSuccess = 1;
+	 //神器物品ID（返回升阶后的id）
+	 optional int32 itemId = 2;
+}
+
+
+//进入竞技场
+message EnterArenaRequest_10020{
+	
+}
+
+//进入竞技场返回
+message EnterArenaResponse_20020{
+      //自己排名
+      required int32 rankings = 1;
+      //三位被挑战者
+      repeated PbFightTargetInfo fightTargetInfos = 2;
+}
+
+
+//购买竞技场挑战次数
+message PurchaseChallengeNumRequest_10021{
+	
+}
+
+//购买竞技场挑战次数返回
+message PurchaseChallengeNumResponse_20021{
+      required bool isSuccess = 1;
+}
+
+
+//竞技场发起挑战
+message LaunchChallengeRequest_10022{
+      //被挑战者playerId
+      required int64 otherPlayerId = 1;
+}
+
+//竞技场发起挑战返回
+message  LaunchChallengeResponse_20022{
+     //被挑战者所有属性
+     required  PbFightTargetDetailInfo fightTargetDetailInfo = 1;
+}
+
+
+//竞技场战斗结算
+message FightSettlementRequest_10023{
+      //自己是否胜利
+      required bool isVictory = 1;
+}
+
+//竞技场战斗结算返回
+message FightSettlementResponse_20023{
+      required bool isSuccess = 1;
+}
+
+//请求竞技场排行榜
+message GetRankingsRequest_10024{
+      
+}
+
+//请求竞技场排行榜返回
+message GetRankingsResponse_20024{
+       //自己排名
+      required int32 rankings = 1;
+      //玩家列表
+      repeated PbRankingsPlayerInfo rankingsInfos = 2;
+}
+
+
+//请求战力排行榜
+message GetRankingsPowerRequest_10025{
+      
+}
+
+//请求战力排行榜返回
+message GetRankingsPowerResponse_20025{
+       //自己排名
+      required int32 rankings = 1;
+      //玩家列表
+      repeated PbRankingsPlayerInfo rankingsInfos = 2;
+}
+
+
+//请求领取竞技场排行奖励
+message ReceiveArenaRewardRequest_10026{
+      
+}
+
+//请求领取竞技场排行奖励返回
+message ReceiveArenaRewardResponse_20026{
+      //0 领取成功  其他值为错误码
+      required int32 code = 1;
+}
+
+
+
+//领取任务奖励（包括主线，日常，成就），注意领取规则，前置任务奖励领取后才能领取
+message ReceiveTaskRewardRequest_10027{
+       //任务ID
+       required int32 taskId = 1;
+}
+
+//领取任务奖励返回
+message ReceiveTaskRewardResponse_20027{
+      //0 领取成功  其他值为错误码
+      required int32 code = 1;
+      //任务ID
+      optional int32 taskId = 2;
+}
+
+
+
+//请求进入副本，服务器要验证挑战次数和扣除挑战次数
+message ChallengePartRequest_10028{
+      //副本ID
+      required int32 partId = 1;
+}
+
+//请求进入副本，服务器要验证挑战次数和扣除挑战次数
+message ChallengePartResponse_20028{
+     required bool isSuccess = 1;
+     //副本ID
+     optional int32 partId = 2;
+     //变化后的剩余挑战次数
+     optional int32 partChallengNum = 3;
+}
+
+
+//副本结算
+message PartSettlementRequest_10029{
+        //副本ID
+	required int32 partId = 1;
+        //是否结束副本挑战（如果直接退出，isVictory就发true; 其他的打完BOSS一律发false，我自行会判断是否有下一个副本，没有就给发奖）
+        required bool isVictory = 2;
+
+}
+
+message PartSettlementResponse_20029{
+	//服务器验证是否成功，为false则数据异常
+	required bool isSuccess = 1;
+	//副本ID
+	required int32 partId = 2;
+	//当前等级经验
+	optional int32 exp = 3;
+	//等级
+	optional int32 level = 4;
+}
+
+//竞技场刷新挑战者
+message RefreshArenaRequest_10030{
+	
+}
+
+//竞技场刷新挑战者返回
+message RefreshArenaResponse_20030{
+      //三位被挑战者
+      repeated PbFightTargetInfo fightTargetInfos = 1;
+}
+
+//脱装备
+message TakeOffEquipRequest_10031{
+        //位置
+	required int32 loc = 1;
+}
+
+//脱装备返回
+message TakeOffEquipResponse_20031{
+       required bool isSuccess = 1;
+       //位置
+       optional int32 loc = 2;
+}
+
+
+//领取活动奖励（所有活动奖励统一领取地方）
+message ReceiveActivityRewardRequest_10032{
+      //活动ID
+      required int32  activityId = 1;
+      //已完成活动下标
+      required int32  activityIndex = 2;
+}
+
+//领取活动奖励返回
+message ReceiveActivityRewardResponse_20032{
+      required bool isSuccess = 1;
+      //活动ID
+      optional int32  activityId = 2;
+      //下标
+      optional int32  activityIndex = 3;
+}
+
+
+
+//买入招财猫
+message PurchaseFortuneCatRequest_10033{
+      //活动ID
+      required int32  activityId = 1;
+      //已完成活动下标
+      required int32  activityIndex = 2;
+}
+
+//买入招财猫返回
+message PurchaseFortuneCatResponse_20033{
+       required bool isSuccess = 1;
+}
+
+
+
+
+
+//渝乐充值获取预支付订单
+message GenerateRechargeOrderInfoRequest_10034{
+      //商品ID
+      required int32  mallId = 1;
+      //用户token
+      required string  accessToken = 2;
+
+      
+}
+
+//订单信息返回
+message GenerateRechargeOrderInfoResponse_20034{
+      //是否成功，成功返回其他信息
+      required bool isSuccess = 1;
+      
+      optional string  appId = 2;
+      //订单号
+      optional string  orderNum =3;
+      //商品ID
+      optional int32  mallId = 4;
+      //商品名称
+      optional string  productName = 5;
+      //商品价格
+      optional int32 fee = 6;
+      //签名
+      optional string  sign = 7;
+}
+
+
+//开箱子
+message OpenBoxRequest_10035{
+        //背包内道具唯一ID
+	required int64 uuid = 1;
+}
+
+message OpenBoxResponse_20035{
+        required bool isSuccess = 1;
+}
+
+
+//保存新手引导
+message SaveGuideRequest_10036{
+      //步骤
+      required int32 guideStep = 1;
+}
+
+
+
+//读取邮件
+message ReadEmailRequest_10037{
+      //邮件ID
+      required int64 emailId = 1;
+}
+
+//读取邮件返回
+message ReadEmailResponse_20037{
+      //邮件ID
+      required int64 emailId = 1;
+}
+
+
+
+
+//领取邮件奖励(和一键领取走同一个返回)
+message ReceiveEmailAwardRequest_10038{
+      //邮件ID
+      required int64 emailId = 1;
+}
+
+
+//一键领取所有邮件奖励
+message AllReceiveEmailAwardRequest_10039{
+      
+}
+
+
+//领取邮件奖励，一键领取统一返回地方
+message ReceiveEmailAwardChangeResponse_20039{
+      //已领取邮件ID集合
+      repeated int64 receiveEmailIdList = 1;
+}
+
+
+
+//删除邮件(和一键删除走同一个返回)
+message DelEmailRequest_10040{
+      //邮件ID
+      required int64 emailId = 1;
+}
+
+
+//一键删除邮件（只会删掉未领取奖励的邮件）
+message AllDelEmailRequest_10041{
+      
+}
+
+
+//删除邮件，一键删除邮件统一返回
+message AllDelEmailResponse_20041{
+      //已删除邮件ID集合
+      repeated int64 delEmailIdList = 1;
+}
+
+
+//抽卡（请做好钻石验证  单抽耗费50钻石，10连耗费450钻石）
+message DrawCardRequest_10042{
+   //类型 1单次抽取  2：10连抽
+   required int32 drawType = 1;
+}
+
+
+
+//抽卡返回
+message DrawCardResponse_20042{
+     required bool isSuccess = 1;
+     //变化后的抽卡次数
+      required int32 drawCardNum = 2;
+      //抽到的ID集合
+      repeated int32 extractIdList = 3;    
+}
+
+
+//领取vip奖励
+message ReceiveVipRewardRequest_10043{
+      //vip等级
+      required int32 vipLvl = 1;    
+}
+
+
+
+//领取vip奖励返回
+message ReceiveVipRewardResponse_20043{
+       required bool isSuccess = 1;    
+      //vip等级
+      required int32 vipLvl = 2;    
+
+}
+
+
+
+//领取月卡奖励
+message ReceiveMonthCardRequest_10044{
+    
+}
+
+
+//领取月卡奖励返回
+message ReceiveMonthCardResponse_20044{
+      //0 领取成功  其他值为错误码
+      required int32 code = 1;
+}
+
+
+
+
+//使用激活码
+message UseGiftCodeRequest_10045{
+    required string giftCode = 1;
+}
+
+
+//使用激活码返回
+message UseGiftCodeResponse_20045{
+      //0 使用成功   其他值为错误码
+      required int32 code = 1;
+      // 获得奖励
+      repeated  PbBaseItemInfo itemList = 2;
+}
+
+
+
+
+//购买投资计划
+message PurchaseInvestmentRequest_10046{
+    
+}
+
+
+//购买投资计划返回
+message PurchaseInvestmentResponse_20046{
+      //0 使用成功   其他值为错误码
+      required int32 code = 1;   
+}
+
+//////////////////////////////////////新加////////////////////////////////////////////
+message sendChat_30000{
+	//类型 0世界
+	required int32 type = 1;
+	required string content = 2; 
+}
+message chatMessageResponse_40000{
+	//类型 0世界
+	required int32 type = 1;
+	required string content = 2; 
+	required string id = 3;
+	optional string playName = 4;
+	optional int32 vipLevel = 5;
+	optional int32 sex = 6;
+}
+//请求等级排行榜
+message GetRankingsLevelRequest_30001{
+      
+}
+
+//请求等级排行榜返回
+message GetRankingsLevelResponse_40001{
+       //自己排名
+      required int32 rankings = 1;
+      //玩家列表
+      repeated PbRankingsPlayerInfo rankingsInfos = 2;
+}
+//请求等级排行榜
+message GetRankingsMoneyRequest_30002{
+      
+}
+
+//请求等级排行榜返回
+message GetRankingsMoneyResponse_40002{
+       //自己排名
+      required int32 rankings = 1;
+      //玩家列表
+      repeated PbRankingsPlayerInfo rankingsInfos = 2;
+}
+////////////////////////////////////////////服务器主动推送消息区域////////////////////////////////////////////////////////////////
+
+//服务器通知客户端可以领取排行奖励(收到此消息代表可以领取排行奖励了)
+message RankingRewardChangeResponse_30001{
+     
+
+}
+
+//道具变化
+message ItemChangeResponse_30002{
+	//背包发生变化的道具信息（变化后的信息）
+	required PbBagChangeInfo bagChangeInfo = 1;
+}
+
+
+//任务变化推送（包括主线，每日，成就），
+message PlayerTaskChangeResponse_30003{
+       repeated  PbTaskChangeInfo  changeTaskInfos = 1;
+}
+
+//战力变化推送
+message PlayerFightPowerChangeResponse_30004{
+        //战力变化后的值
+	required int32 fightPower = 1;
+}
+
+//货币变化推送
+message PlayerCurrencyChangeResponse_30005{
+        //货币类型 money_2:金币，money_3:钻石，money_4:竞技币，money_5:技能玉，money_6:神器石头，money_7:装备强化石
+	required string currencyType = 1;
+	//变化后的值
+	required int32 changeNum = 2;
+}
+
+//活动完成 主动推送
+message PlayerActivityInfoChangeResponse_30006{
+     //活动ID
+      required int32  activityId = 1;
+     //已完成活动下标
+     required int32  activityIndex = 2;
+     //只有招财猫这个字段才返回
+      optional int32  diamond = 3;
+      
+}
+
+
+//0点推送商城限购次数刷新
+message RefreshStorePurchaseInfoResponse_30007{
+         //商城限制商品已购买次数信息
+	repeated PbStorePurchaseInfo storeInfos = 1;
+      
+}
+
+
+//新增邮件推送
+message   PlayerEmailChangeInfoResponse_30008{    
+      required PbPlayerEmailInfo playerEmailInfo = 1;     
+}
+
+
+
+//vip等级变化推送
+message PlayerVipLevelChangeResponse_30009{   
+     required int32 vipExp = 1;     
+    required int32 vipLevel = 2;     
+}
+
+//月卡购买成功返回
+message MonthCardChangeResponse_30010{
+    //月卡信息
+    required PbMonthCardInfo monthCardInfo = 1;
+}
+////////////////////////////////////////////////对象信息区域/////////////////////////////////////////////////////////////////////
+
+//玩家基本信息
+message PbPlayerInfo{
+	required string playerId = 1;
+	//职业id
+	required int32 jobId = 2;
+	required string playerName = 3;
+	//金币
+	required int32 gold = 4;
+	//钻石
+	required int32 diamond = 5;
+	//头像id
+	required int32 headId = 6;
+	//当前等级经验
+	required int32 exp = 7;
+	//等级
+	required int32 level = 8;
+	//vip等级
+	required int32 vipLevel = 9;
+	//当前关卡
+	required int32 points = 10;
+	//神器强化石
+	required int32 strengthenArtifactStone = 11;
+	//技能玉
+	required int32 upgradeSkillsJade = 12;
+	//装备升阶石
+	required int32 reinforcedEquipmentStone = 13;
+	//重生次数
+	required int32 rebirthNum = 14;
+	//升级了的技能列表
+	repeated int32 skillTabs = 15;
+	//技能栏里的技能列表
+	repeated PbSkillInfo skillColumn = 16;
+	//战斗力
+	required int32 fightPower = 17;
+	//装备栏
+	repeated PbEquipColumnInfo Columns = 18;
+	//商城限制商品购买次数信息
+	repeated PbStorePurchaseInfo storeInfos = 19;
+	//竞技币
+	required int32 sportsMoney = 20; 
+	//已拥有神器集合(artifact.xls表的itemId集合)
+	repeated int32 artifactInfos = 21;
+	//当前竞技场挑战次数
+	required int32 challengeNum = 22;
+	//竞技场购买挑战的已购买次数
+	required int32 challengeCount = 23;
+	//任务集合
+        required PbPlayerTaskInfo playerTaskInfos = 24;
+	//副本挑战次数
+	repeated PbPartInfo partChallengNumInfos = 25;
+	//竞技场刷新挑战者，已购买次数
+	required int32 refreshPurchaseCount = 26;
+	//离线获得奖励信息
+	optional PbOfflineRewardInfo offlineRewardInfo = 27; 
+	//已完成活动信息（返回的是已完成的）
+        repeated PbActivityInfo activityInfos = 28;
+	//引导步骤
+	required int32 guideStep = 29;
+	//用户邮件
+	repeated PbPlayerEmailInfo emailInfos = 30;
+	//抽卡信息
+	optional PbDrawCardInfo drawCardInfo = 31;
+	//vip经验（已累计充值多少钻石）
+        required int32 vipExp = 32;
+	//已领取vip奖励信息
+	repeated int32 vipLvlList = 33;
+	//月卡信息
+	optional PbMonthCardInfo monthCardInfo = 34;
+	//是否购买了投资计划 0未购买  1已购买
+	required int32 purchaseInvestment = 35;
+        //历史最高关卡
+        required int32 historyMaxPointsId = 36;
+        //历史最高等级
+        required int32 historyMaxLevel = 37;
+	//是否充值过 
+        required bool isRecharge = 38;
+	//性别
+	required int32 sex = 39;
+
+}
+
+//装备栏单个栏位
+message PbEquipColumnInfo{
+	//装备栏部位，从0开始
+	required int32 loc = 1;
+	optional PbItemInfo itemInfo = 2;
+	required PbGemGrooveInfos gemGrooves = 3;
+}
+
+
+
+//单个宝石槽位
+message PbGemGrooveInfo{
+	//槽位(从0开始)
+	required int32 loc = 1;
+	//是否开启
+	required bool isOpen = 2;
+	//镶嵌的宝石id
+	required int32 gemId = 3;
+}
+
+//宝石槽列表
+message PbGemGrooveInfos{
+	repeated PbGemGrooveInfo gemGrooves = 1;
+}
+
+//道具信息
+message PbItemInfo{
+	//唯一id
+	required int64 uuid = 1;
+	//道具id
+	required int32 itemId = 2;
+	//道具数量
+	required int32 itemNum = 3;
+	//等级（只有道具是装备才有）
+	optional int32 level = 4;
+}
+
+message PbBagChangeInfo{
+	repeated PbItemInfo bagChangeItems = 1;
+}
+
+//商城限制商品，用户购买次数信息
+message PbStorePurchaseInfo{
+      //商品id
+      required int32 seqId = 1;
+      //已购买次数
+      required int32 limitPlayerNum = 2;
+
+}
+
+
+//技能
+message PbSkillInfo{
+	required int32 skillTab = 1;
+	required int32 loc = 2;
+}
+
+
+//竞技场被挑战者对象信息
+message PbFightTargetInfo{
+       //对应栏位 1,2,3 
+       required int32 loc = 1;
+       //playerId
+       required int64 otherPlayerId = 2;
+       //昵称
+       required string otherPlayerName = 3;
+       //等级
+       required int32 level = 4;
+       //职业id
+       required int32 otherJobId = 5;
+       //头像id
+       required int32 otherHeadId = 6;
+       //战斗力
+       required int32 otherFightPower = 7;
+       //排名
+       required int32 otherRankings = 8;
+	   required int32 sex = 9;
+}
+
+
+//竞技场战斗，战斗对象的所有详细属性
+message PbFightTargetDetailInfo{
+       //playerId
+       required int64 otherPlayerId = 1;
+       //昵称
+       required string otherPlayerName = 2;
+       //等级
+       required int32 level = 3;
+       //职业id
+       required int32 otherJobId = 4;
+       //头像id
+       required int32 otherHeadId = 5;
+       //战斗力
+       required int32 otherFightPower = 6;
+       //排名
+       required int32 otherRankings = 7;
+       //升级了的技能列表
+        repeated int32 skillTabs = 8;
+	//技能栏里的技能列表
+	repeated PbSkillInfo skillColumn = 9;
+	//装备栏
+	repeated PbEquipColumnInfo Columns = 10;
+	//已拥有神器集合(artifact.xls表的itemId集合)
+	repeated int32 artifactInfos = 11;
+	required int32 sex = 12;
+}
+
+//排行榜信息
+message PbRankingsPlayerInfo{
+       //昵称
+       required string otherPlayerName = 1;
+       //战斗力
+       required int32 otherFightPower = 2;
+       //等级
+       required int32 otherPlayerLevel = 3;
+}
+
+//任务信息
+message PbPlayerTaskInfo{
+    //返回的所有任务都是已达成，或者存有进度的。如果没有返回，说明没达成或者还没有进度
+    //主线
+    repeated PbTaskInfo threadTaskInfos = 1;
+    //日常
+    repeated PbTaskInfo dayTaskInfos = 2;
+    //成就
+    repeated PbTaskInfo achieveTaskInfos = 3;
+
+}
+
+message PbTaskInfo{
+      //任务ID
+      required int32 taskId = 1;
+      //已完成系数（客户端可以根据这个值和excel里的值来判断任务是否已达成）
+      required int32 completeNum = 2;
+      //是否已领取 
+      required bool isReceive = 3; 
+}
+
+message PbTaskChangeInfo{
+       //任务ID
+      required int32 taskId = 1;
+      //已完成系数变化后的值
+      required int32 completeNum = 2;
+}
+
+message PbPartInfo{
+      //副本类型
+      required int32 partType = 1;
+      //当前剩余挑战次数
+      required int32 partChallengNum = 2; 
+}
+
+
+message PbOfflineRewardInfo{
+    //离线时间（单位秒）  
+    required int32  offlineTime = 1;
+    //金币
+    required int32  gold = 2;
+    //经验
+    required int32  exp = 3;
+    //月卡(0表示没有月卡，20表示加成20%)
+    required int32  amplitude = 4;
+}
+
+//活动信息
+message PbActivityInfo{
+      //活动ID
+      required int32  activityId = 1;
+      //已完成活动
+      repeated PbCompletedActivityInfo completedActivityInfos = 2;
+}
+
+
+
+//活动
+message PbCompletedActivityInfo{
+    //已完成活动下标(返回的是活动集合的下标)
+    required int32  activityIndex = 1;
+    //是否已领取奖励
+    required bool  isReward = 2;
+    //只有招财猫奖励未领取，这个字段才返回
+    optional int32  diamond = 3;
+}
+
+
+
+
+message PbBaseItemInfo{
+    required int32  itemId = 1;
+    required int32  itemNum = 2;
+}
+
+
+
+//邮件
+message PbPlayerEmailInfo{
+    //id
+    required int64  emailId = 1;
+    //标题
+    required string  emailTitle = 2;
+    //内容
+    required string  emailContent = 3;
+    //邮件里的奖励，如果空的，就是没有物品
+    repeated  PbBaseItemInfo itemList = 4;
+    //读取状态 0未读取 1已读取
+     required int32 readState = 5;
+     //物品领取状态 0未领取 1已领取
+     required int32 itemState = 6;
+     //时间
+     required int64 createTime = 7;
+}
+
+
+//抽卡信息
+message PbDrawCardInfo{
+   //已抽卡次数
+   required int32  drawCardNum = 1;
+}
+
+
+
+//月卡信息
+message PbMonthCardInfo{
+  //月卡剩余天数
+  required int32  cardEndDay = 1;
+   //今日是否已领取奖励
+  required bool  isReceive = 2;
+}

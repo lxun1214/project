@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="t_6"/>
+	<e:Image y="123.62" source="ditu_png" horizontalCenter="0"/>
+	<e:Image id="role" y="285" horizontalCenter="0" source=""/>
+	<e:Group id="equipGrp" y="212" anchorOffsetX="0" anchorOffsetY="0" width="628" horizontalCenter="0">
+		<e:Group y="68" horizontalCenter="0">
+			<ns1:PlayerEquipItem id="equip0" skinName="PlayerEquipItemSkin" y="0" x="0"/>
+			<ns1:PlayerEquipItem id="equip1" skinName="PlayerEquipItemSkin" y="0" x="448"/>
+			<e:layout>
+				<e:HorizontalLayout gap="400"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="228" horizontalCenter="0">
+			<ns1:PlayerEquipItem id="equip2" skinName="PlayerEquipItemSkin" y="0" x="0"/>
+			<ns1:PlayerEquipItem id="equip3" skinName="PlayerEquipItemSkin" y="0" x="448"/>
+			<e:layout>
+			<e:HorizontalLayout gap="400"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="327" horizontalCenter="0">
+			<ns1:PlayerEquipItem id="equip4" skinName="PlayerEquipItemSkin" y="0" x="0"/>
+			<ns1:PlayerEquipItem id="equip5" skinName="PlayerEquipItemSkin" y="0" x="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="400"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="327" horizontalCenter="0">
+			<ns1:PlayerEquipItem id="equip6" skinName="PlayerEquipItemSkin" y="0" x="0"/>
+			<ns1:PlayerEquipItem id="equip8" skinName="PlayerEquipItemSkin" y="0" x="120"/>
+			<ns1:PlayerEquipItem id="equip9" skinName="PlayerEquipItemSkin" x="393"/>
+			<ns1:PlayerEquipItem id="equip7" skinName="PlayerEquipItemSkin" y="0" x="513"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group y="799.45" horizontalCenter="1" width="640" anchorOffsetY="0" height="275">
+		<e:Image source="sx_1" right="0" top="0" bottom="0" scale9Grid="40,52,240,5"/>
+		<e:Image source="sx_1" scaleX="-1" left="1" top="0" bottom="0" scale9Grid="40,52,240,5"/>
+		<e:Label text="属  性" x="215" y="2.17" size="25" touchEnabled="true" width="214" height="42" verticalAlign="middle" textAlign="center" fontFamily="Arial" anchorOffsetY="0" anchorOffsetX="0" textColor="0xffffff"/>
+		<e:Button id="labTypes" label="" x="575" y="8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="xiang_1" source.down="xiang_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:DataGroup id="dg" width="530" height="200" y="56" anchorOffsetX="0" horizontalCenter="0">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="2" paddingLeft="0" columnWidth="265"/>
+		</e:layout>
+		</e:DataGroup>
+	</e:Group>
+    <e:Group anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" bottom="167">
+        <!--<e:Group horizontalCenter="-375">-->
+			<e:Button id="btnForge" label="" x="109" y="14" skinName="Btn003Skin" icon="锻造"/>
+			<e:Button id="btnGem" label="" x="119" y="24" skinName="Btn003Skin" icon="宝石" />
+			<e:Button id="btnArtifact" label="" x="109" y="14" skinName="Btn003Skin" icon="神器"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+        <!--</e:Group>-->
+    </e:Group>
+	<e:Group id="g0" y="138" horizontalCenter="0">
+		<e:Image y="26" source="pbg1" x="6"/>
+		<e:Image y="0" source="pbg0" x="0"/>
+		<e:BitmapLabel id="f" x="146" y="23" text="0000" font="power_fnt"/>
+		<e:Image x="73" y="17" source="power11"/>
+	</e:Group>
+</e:Skin>

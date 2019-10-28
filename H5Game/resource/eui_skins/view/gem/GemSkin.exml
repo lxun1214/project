@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GemSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="t_8"/>
+	<e:Group y="214.82" anchorOffsetY="0" height="680.06" anchorOffsetX="0" width="640" horizontalCenter="0">
+		<e:Image source="dikuang_ggg" scaleX="1" scaleY="1" top="1" bottom="-0.9400000000000546" left="1" right="-1" scale9Grid="32,19,2,9"/>
+		<e:Image scale9Grid="93,921,564,63" source="组-52_png" horizontalCenter="0.5" verticalCenter="0" locked="true"/>
+		<ns1:GemItemBase id="gen1" skinName="GemItemSkin" x="390.73" y="124"/>
+		<ns1:GemItemBase id="gen0" skinName="GemItemSkin" y="15.18" horizontalCenter="0"/>
+		<ns1:GemItemBase id="gen2" skinName="GemItemSkin" verticalCenter="14.470000000000027" right="3"/>
+		<ns1:GemItemBase id="gen3" skinName="GemItemSkin" x="392.73" y="446"/>
+		<ns1:GemItemBase id="gen4" skinName="GemItemSkin" y="495.38" horizontalCenter="0"/>
+		<ns1:GemItemBase id="gen5" skinName="GemItemSkin" y="448" horizontalCenter="-160"/>
+		<ns1:GemItemBase id="gen6" skinName="GemItemSkin" verticalCenter="18.470000000000027" left="12"/>
+		<ns1:GemItemBase id="gen7" skinName="GemItemSkin" x="59.8" y="123"/>
+		<ns1:ForgeItem id="selectItem" skinName="EquipSkin" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Scroller width="635" height="66" y="137" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" scrollPolicyH="on" scrollPolicyV="off">
+		<e:Group id="tabBar" anchorOffsetX="0" width="638">
+			<ns1:ToggleBtn01 id="btn0" skinName="ToBtn000Skin" x="42" y="132.61" s0="武器" s1="武器" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn1" skinName="ToBtn000Skin" x="201.3" y="132.61" s0="头盔" s1="头盔" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn2" skinName="ToBtn000Skin" x="360.6" y="132.61" s1="胸甲" s0="胸甲" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn3" skinName="ToBtn000Skin" x="519.702" y="133.978" s0="bq_0004_吊坠" s1="bq_0004_吊坠" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn4" skinName="ToBtn000Skin" x="529.702" y="143.978" s0="bq_0002_护腕" s1="bq_0002_护腕" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn5" skinName="ToBtn000Skin" x="539.702" y="153.978" s0="bq_0002_护腕" s1="bq_0002_护腕" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn6" skinName="ToBtn000Skin" x="549.702" y="163.978" s0="bq_0003_戒指" s1="bq_0003_戒指" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn7" skinName="ToBtn000Skin" x="559.702" y="173.978" s0="bq_0003_戒指" s1="bq_0003_戒指" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn8" skinName="ToBtn000Skin" x="569.702" y="183.978" s0="bq_0001_腰带" s1="bq_0001_腰带" scaleX="0.9" scaleY="0.9"/>
+			<ns1:ToggleBtn01 id="btn9" skinName="ToBtn000Skin" x="579.702" y="193.978" s0="bq_0000_靴子" s1="bq_0000_靴子" scaleX="0.9" scaleY="0.9"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:Group width="640" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" height="285" bottom="151">
+		<e:Scroller id="Scroller" width="100%" visible="true" scrollPolicyV="off" anchorOffsetY="0" anchorOffsetX="0" x="0" height="283" y="0">
+		<e:List id="itemList" itemRendererSkinName="BaseItemSkin" height="100%" visible="true" anchorOffsetX="0" anchorOffsetY="0">
+			<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+			</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+			<e:TileLayout requestedRowCount="2" horizontalGap="5" paddingLeft="5" verticalGap="5"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

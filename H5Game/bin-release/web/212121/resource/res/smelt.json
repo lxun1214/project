@@ -1,0 +1,9 @@
+{"file":"smelt.png","frames":{
+"sezhi_0000s_0002_黄色":{"x":1,"y":42,"w":55,"h":27,"offX":1,"offY":1,"sourceW":56,"sourceH":28},
+"sezhi_0000s_0003_蓝色":{"x":58,"y":71,"w":55,"h":26,"offX":1,"offY":1,"sourceW":56,"sourceH":28},
+"一键容量":{"x":1,"y":1,"w":159,"h":39,"offX":2,"offY":2,"sourceW":163,"sourceH":43},
+"熔炼1":{"x":162,"y":1,"w":80,"h":38,"offX":2,"offY":2,"sourceW":84,"sourceH":42},
+"sezhi_0000s_0005_自动":{"x":115,"y":71,"w":51,"h":27,"offX":3,"offY":1,"sourceW":56,"sourceH":28},
+"sezhi_0000s_0000_暗金":{"x":162,"y":41,"w":54,"h":28,"offX":1,"offY":0,"sourceW":56,"sourceH":28},
+"sezhi_0000s_0004_绿色":{"x":1,"y":71,"w":55,"h":26,"offX":0,"offY":2,"sourceW":56,"sourceH":28},
+"sezhi_0000s_0001_紫色":{"x":58,"y":42,"w":55,"h":27,"offX":1,"offY":1,"sourceW":56,"sourceH":28}}}

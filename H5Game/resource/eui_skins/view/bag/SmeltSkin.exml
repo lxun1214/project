@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmeltSkin" width="750" height="1334"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="图层-12"/>
+	<e:Group top="134" bottom="561" horizontalCenter="0">
+		<e:Image anchorOffsetX="0" y="0" source="dikuang_ggg" width="634" anchorOffsetY="0" height="639" x="0" scale9Grid="11,11,21,20"/>
+		<e:ViewStack id="viewStack" width="613" anchorOffsetX="0" anchorOffsetY="0" selectedIndex="0" x="11" top="10" bottom="10">
+			<e:Group id="group" name="Group" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0">
+			<e:Scroller id="itemScroller" scrollPolicyH="off" anchorOffsetY="0" top="6" bottom="0" horizontalCenter="0">
+				<e:List id="itemList" itemRendererSkinName="SmeltItemSkin" visible="true" anchorOffsetX="0" anchorOffsetY="0">
+				<e:ArrayCollection>
+					<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据2"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout paddingLeft="0" horizontalGap="10" verticalGap="5" requestedColumnCount="5" horizontalAlign="center" columnWidth="110"/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+			</e:Group>
+		</e:ViewStack>
+	</e:Group>
+	<e:Group y="1014" horizontalCenter="0">
+		<e:Group x="0" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box0" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0005_自动" y="9"/>
+		</e:Group>
+		<e:Group x="118" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box1" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0004_绿色" y="9"/>
+		</e:Group>
+		<e:Group x="228" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box2" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0003_蓝色" y="9"/>
+		</e:Group>
+		<e:Group x="322" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box3" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0001_紫色" y="9"/>
+		</e:Group>
+		<e:Group x="426" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box4" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0002_黄色" y="9"/>
+		</e:Group>
+		<e:Group x="540" y="0">
+			<e:CheckBox label="" skinName="CheckBox0" id="box5" x="0" y="0"/>
+			<e:Image x="44" source="sezhi_0000s_0000_暗金" y="9"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group y="791" anchorOffsetY="0" height="201" anchorOffsetX="0" width="634" horizontalCenter="0">
+		<e:Image source="suxing_ggg" scale9Grid="43,30,10,16" anchorOffsetX="0" left="0" top="0" bottom="0" right="0"/>
+		<e:Image source="图层-812" horizontalCenter="0" verticalCenter="0"/>
+		<ns1:BaseItem id="userItem" skinName="BaseItemSkin" verticalCenter="0" horizontalCenter="-180"/>
+		<ns1:BaseItem id="smaltItem" skinName="BaseItemSkin" verticalCenter="0" horizontalCenter="180"/>
+	</e:Group>
+    <e:Group anchorOffsetX="0" horizontalCenter="0.5" anchorOffsetY="0" bottom="164">
+			<e:Button id="smeltBtn" label="" icon="熔炼" scaleX="1" scaleY="1" skinName="Btn002Skin"/>
+
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+{"file":"chat.png","frames":{
+"xx_0001_世界":{"x":1,"y":78,"w":80,"h":38,"offX":0,"offY":1,"sourceW":81,"sourceH":39},
+"椭圆-1":{"x":327,"y":1,"w":79,"h":79,"offX":2,"offY":2,"sourceW":83,"sourceH":83},
+"发送":{"x":83,"y":78,"w":64,"h":33,"offX":0,"offY":0,"sourceW":64,"sourceH":33},
+"圆角矩形-172":{"x":1,"y":1,"w":324,"h":75,"offX":0,"offY":0,"sourceW":324,"sourceH":75},
+"xx_0000_系统":{"x":408,"y":1,"w":80,"h":39,"offX":1,"offY":0,"sourceW":81,"sourceH":39},
+"xx_0002_好友":{"x":408,"y":42,"w":80,"h":39,"offX":1,"offY":0,"sourceW":81,"sourceH":39}}}

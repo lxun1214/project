@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="roleIconSkin" width="336" height="133" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="2" top="0" source="rw_1"/>
+	<e:Image x="0" y="89" source="rw_2" scale9Grid="29,5,29,33" anchorOffsetX="0" width="119"/>
+	<e:Image id="icon" verticalCenter="-12.5" width="120" height="123" anchorOffsetY="0" x="9" source="human2_png" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="lvl" text="10重100级" x="9" y="108" anchorOffsetX="0" width="100" anchorOffsetY="0" height="21" size="20" textAlign="center" textColor="0x2bf904" bold="true" strokeColor="0x020100" stroke="0.3"/>
+	<e:Group id="eff" x="228" y="46"/>
+</e:Skin>

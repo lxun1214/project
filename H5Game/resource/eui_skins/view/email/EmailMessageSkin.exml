@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailMessageSkin" width="666" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0" source="dikuang_ggg" left="0" bottom="0" top="0" right="0" scale9Grid="18,15,11,10"/>
+	<e:Button id="btn0" label="领取" bottom="11" skinName="Btn005Skin" horizontalCenter="0" visible="false"/>
+	<e:Group x="10" y="20">
+		<e:Image scale9Grid="47,42,3,4" scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0" source="矩形-14" x="0"/>
+		<e:Label text="系统信息" anchorOffsetX="0" width="141" anchorOffsetY="0" height="33.67" lineSpacing="3" size="35" x="42" textColor="0x774919" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="l2" text="" anchorOffsetX="0" anchorOffsetY="0" lineSpacing="3" size="30" textColor="0xDB0000" y="83" height="109" left="40" right="40"/>
+	<e:Group x="10" y="200">
+		<e:Image scale9Grid="47,42,3,4" scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0" source="矩形-14" x="0" y="0"/>
+		<e:Label text="系统奖励" anchorOffsetX="0" width="141" anchorOffsetY="0" height="33.67" lineSpacing="3" size="35" x="42" textColor="0x774919" verticalCenter="0"/>
+	</e:Group>
+	<e:Group anchorOffsetY="0" height="136" y="265" left="40" right="40">
+		<e:Scroller anchorOffsetY="0" anchorOffsetX="0" left="0" right="0">
+		<e:DataGroup id="dg" x="1.33">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="left"/>
+			</e:layout>
+		</e:DataGroup>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,12 @@
+{"file":"shop.png","frames":{
+"确定":{"x":1,"y":135,"w":80,"h":40,"offX":2,"offY":2,"sourceW":84,"sourceH":44},
+"黑市":{"x":83,"y":137,"w":79,"h":40,"offX":2,"offY":1,"sourceW":84,"sourceH":43},
+"购买":{"x":83,"y":179,"w":64,"h":33,"offX":0,"offY":0,"sourceW":64,"sourceH":33},
+"+":{"x":161,"y":69,"w":78,"h":66,"offX":0,"offY":0,"sourceW":78,"sourceH":66},
+"领取":{"x":164,"y":178,"w":80,"h":38,"offX":2,"offY":2,"sourceW":84,"sourceH":42},
+"+1":{"x":167,"y":1,"w":78,"h":66,"offX":0,"offY":0,"sourceW":78,"sourceH":66},
+"-":{"x":1,"y":67,"w":78,"h":66,"offX":0,"offY":0,"sourceW":78,"sourceH":66},
+"-1":{"x":81,"y":67,"w":78,"h":66,"offX":0,"offY":0,"sourceW":78,"sourceH":66},
+"道具":{"x":164,"y":137,"w":80,"h":39,"offX":2,"offY":3,"sourceW":84,"sourceH":44},
+"shop5":{"x":1,"y":1,"w":164,"h":64,"offX":3,"offY":3,"sourceW":170,"sourceH":70},
+"竞技":{"x":1,"y":177,"w":80,"h":39,"offX":2,"offY":0,"sourceW":84,"sourceH":42}}}

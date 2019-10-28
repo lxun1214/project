@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MonthCardSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image source="月卡13_png" x="0" y="0"/>
+		<e:Label id="left_text" text="剩余天数" y="918.99" x="492" textColor="0xf90f04" fontFamily="KaiTi"/>
+		<e:Label text="每日额外领取" y="882.38" size="24" x="82.92" textColor="0x13fc07" fontFamily="KaiTi"/>
+		<e:Button id="getBtn" label="未 达 成" x="468.61" y="969.1" skinName="Btn005Skin" enabled="false"/>
+		<e:Button id="buyBtn" label="购  买" x="288.76" y="774.21" icon="" skinName="Btn005Skin"/>
+		<ns1:BaseItem id="it" x="92.76" y="917.21" skinName="BaseItemSkin"/>
+		<e:DataGroup id="gd" height="150" y="604.74" anchorOffsetY="0" anchorOffsetX="0" itemRendererSkinName="BaseItemSkin" horizontalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:DataGroup>
+		<e:Button id="newCloseBtn00" label="" y="50" skinName="CloseBtn00" x="638"/>
+	</e:Group>oup>
+	
+</e:Skin>

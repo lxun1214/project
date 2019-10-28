@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ProgressBarSkinII" minWidth="30" minHeight="18" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="jdt_png"/>
+	<e:Image id="thumb" height="100%" source="jdt1_png" scale9Grid="77,4,469,27"/>
+	<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle" size="28" fontFamily="KaiTi" horizontalCenter="0" verticalCenter="0" text="10/100" bold="true" textColor="0x0921f4" visible="false"/>
+</e:Skin>

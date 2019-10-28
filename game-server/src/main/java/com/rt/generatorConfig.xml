@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="D:\mysql-connector-java-5.1.29.jar" />
+	<context id="context1">
+		 <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://106.12.117.205:3306/logic_db?useUnicode=true&amp;characterEncoding=utf8" userId="root" password="lxun121433!@#" ></jdbcConnection>
+		<javaModelGenerator targetPackage="com.rt.db.domain"
+			targetProject="game-server" />
+		<sqlMapGenerator targetPackage="com.rt.db.mapper"
+			targetProject="game-server" />
+		<javaClientGenerator targetPackage="com.rt.db.mapper"
+			targetProject="game-server" type="XMLMAPPER" />
+		<table schema="player" tableName="player" domainObjectName="PlayerBean">
+		</table>
+	</context>
+</generatorConfiguration>

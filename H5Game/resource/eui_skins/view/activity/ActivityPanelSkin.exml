@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ActivityPanelSkin" width="650" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" horizontalCenter="0" top="0" source=""/>
+	<e:Scroller width="650" anchorOffsetY="0" anchorOffsetX="0" bottom="0" horizontalCenter="0" top="209">
+		<e:Group>
+		<e:DataGroup id="dg" scaleX="1" scaleY="1" itemRendererSkinName="ActivityItemSkin"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

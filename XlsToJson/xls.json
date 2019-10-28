@@ -1,0 +1,17 @@
+{
+	"filters":["gameDatas","wordshield.xls","operationActivity.xls","npcInfo.xls","extractInfo.xls","slotAttribute.xls","itemDraw.xls"],
+	"dec":"下面标注则以数组形式导出",
+	"types":[
+		"attribute",
+		"attributesIncrease",
+		"bulletin",
+		"equipGrow",
+		"rankingAward",
+		"rechargeInfo",
+		"store",
+		"surnametype",
+		"vipBase",
+		"paymentBase",
+		"operationActivityDetail"
+	]
+}

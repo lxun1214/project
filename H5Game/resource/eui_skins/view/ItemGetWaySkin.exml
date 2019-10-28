@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemGetWaySkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rc" left="0" right="0" top="0" bottom="0" fillAlpha="0.5"/>
+	<e:Image source="tipsBg" y="418" scale9Grid="86,49,520,300" width="600" horizontalCenter="0" anchorOffsetY="0" height="449"/>
+	<e:Image source="gainItem001" horizontalCenter="0.5" y="397"/>
+	<ns1:BaseItem id="item" y="504" horizontalCenter="-74"/>
+	<e:Label id="iname" text="物品" y="541" horizontalCenter="98"/>
+	<e:Image y="700" source="gainItem000" horizontalCenter="0.5"/>
+	<e:Group id="g0" width="350" height="75" y="622" horizontalCenter="0">
+		<e:Image id="i0" x="24" source="gainItem1" scaleX="1" scaleY="1" verticalCenter="0"/>
+		<e:Button id="b0" label="" x="203" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="gainItem002" source.down="gainItem003"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="g1" width="350" height="75" y="733" horizontalCenter="0">
+		<e:Image id="i1" x="24" scaleX="1" scaleY="1" verticalCenter="0" source="gainItem3"/>
+		<e:Button id="b1" label="" x="203">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="gainItem002" source.down="gainItem003"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

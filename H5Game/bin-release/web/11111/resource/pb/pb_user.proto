@@ -1,0 +1,88 @@
+package com.rt.pb;
+
+//用户注册
+//message UserRegistRequest_1001{
+//	//账号
+//	required string accountName = 1;
+//	//密码
+//	required string passWord = 2;
+//	
+//}
+
+
+//用户登陆
+message UserLoginRequest_1002{
+	//账号
+	required string accountName = 1;
+	//密码
+	required string passWord = 2;
+}
+
+//注册或登陆成功返回
+message UserLoginResponse_2002{
+	//是否登陆成功
+	required bool isSuccess = 1;
+	required int64 userId = 2;
+	//推荐的服务器信息
+	required PbServerInfo serverInfo = 3;
+}
+
+//请求服务器列表
+message GetServerListRequest_1003{
+	
+}
+
+//返回服务器列表
+message GetServerListResponse_2003{
+	repeated PbServerInfo pbServerInfoList = 1;
+}
+
+//请求服务器地址
+message GetServerUrlRequest_1004{
+	required int32 serverId = 1;
+	required int64 userId = 2;
+}
+
+//返回服务器地址
+message GetServerUrlResponse_2004{
+	required string serverIp = 1;
+	required int32 serverPort = 2;
+	required string serverAddress = 3;
+	//加密后的token
+	required string token=4;
+}
+
+
+
+//sdk登录接口
+message SDKUserLoginRequest_1005{
+        //渠道  1手游迷  其他暂定
+        required int32 sdkType = 1;
+	//sdk方用户唯一ID
+	required string sdkUserId = 2;
+	//扩展保留字段，其他渠道服务器要求时需要，手游迷渠道暂时不需要
+	optional string  ticket = 3;
+}
+
+//sdk登录返回
+message SDKUserLoginResponse_2005{
+	//是否登陆成功
+	required bool isSuccess = 1;
+	required int64 userId = 2;
+	//推荐的服务器信息
+	required PbServerInfo serverInfo = 3;
+}
+
+
+
+//服务器信息
+message PbServerInfo{
+	//服务器id
+	required int32 serverId = 1;
+	//服务器名字
+	required string serverName = 2;
+	//服务器开服时间
+	required int64 openTime = 3;
+	//服务器状态
+	required int32 serverState = 4;
+}

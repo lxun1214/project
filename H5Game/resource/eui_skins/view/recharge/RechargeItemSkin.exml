@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeItemSkin" width="305" height="211" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="buyBtn" label="" enabled="true" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="recharge_json.eItemBg" source.down="recharge_json.eItemBg" source.disabled="recharge_json.eItemBg"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="new" source="recharge_json.new" touchEnabled="false" top="0" left="0"/>
+	<e:Label id="labNum" text="Label" y="165" anchorOffsetX="0" textAlign="center" touchEnabled="false" horizontalCenter="0"/>
+	<e:Image id="diamonds" y="88" touchEnabled="false" horizontalCenter="0" source="bsaa"/>
+	<e:Label id="labName" text="额外赠送20%" y="49.32" anchorOffsetX="0" textAlign="center" touchEnabled="false" horizontalCenter="0" textColor="0x16f704" bold="true"/>
+	<e:Label id="title" text="6800钻石" y="4" anchorOffsetX="0" width="192.67" textAlign="center" touchEnabled="false" horizontalCenter="15"/>
+</e:Skin>

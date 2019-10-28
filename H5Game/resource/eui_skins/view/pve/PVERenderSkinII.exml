@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PVERenderSkinII" width="650" height="220" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="kuang_jgg11" left="0" top="0" bottom="0" right="0" scale9Grid="29,29,5,4"/>
+	<e:Image id="bg" horizontalCenter="0" verticalCenter="-4" source="fb4_png"/>
+	<e:Image x="351" y="137" source="fb7"/>
+	<e:Label id="l0" text="沉默的神殿" x="43" y="34" size="32" fontFamily="Microsoft YaHei"/>
+	<e:Label id="l1" text="参与人数:99999" x="212" y="50" size="20" visible="false"/>
+	<e:Label id="l2" text="开放时间:全天" x="51" y="121" size="20"/>
+	<e:Label id="l3" text="挑战可获得:" x="51" y="151" size="20"/>
+	<e:Label id="l4" text="挑战可获得" x="366" y="143" size="22"/>
+</e:Skin>

@@ -1,0 +1,11 @@
+{"file":"bag.png","frames":{
+"quality_10":{"x":1,"y":209,"w":96,"h":96,"offX":6,"offY":6,"sourceW":108,"sourceH":108},
+"宝石":{"x":99,"y":295,"w":79,"h":41,"offX":2,"offY":1,"sourceW":84,"sourceH":43},
+"quality_11":{"x":111,"y":1,"w":96,"h":96,"offX":6,"offY":6,"sourceW":108,"sourceH":108},
+"quality_12":{"x":111,"y":99,"w":96,"h":96,"offX":6,"offY":6,"sourceW":108,"sourceH":108},
+"quality_13":{"x":1,"y":111,"w":96,"h":96,"offX":6,"offY":6,"sourceW":108,"sourceH":108},
+"quality_14":{"x":99,"y":197,"w":96,"h":96,"offX":6,"offY":6,"sourceW":108,"sourceH":108},
+"quality_15":{"x":1,"y":1,"w":108,"h":108,"offX":0,"offY":0,"sourceW":108,"sourceH":108},
+"装备":{"x":1,"y":307,"w":80,"h":40,"offX":2,"offY":2,"sourceW":84,"sourceH":44},
+"物品":{"x":83,"y":338,"w":78,"h":39,"offX":2,"offY":1,"sourceW":84,"sourceH":42},
+"熔炼":{"x":163,"y":338,"w":80,"h":38,"offX":2,"offY":2,"sourceW":84,"sourceH":42}}}

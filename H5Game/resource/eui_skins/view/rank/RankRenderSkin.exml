@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankRenderSkin" width="640" height="40" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="tt" verticalCenter="0" horizontalCenter="0" source="rankI"/>
+	<e:Label id="l0" text="990" verticalCenter="0" textAlign="center" x="38" width="60" textColor="0x92422c" fontFamily="KaiTi"/>
+	<e:Label id="l1" text="xx" x="148" verticalCenter="0" textAlign="center" width="150" textColor="0x92422c" fontFamily="KaiTi"/>
+	<e:Label id="l2" text="1" x="317" width="150" verticalCenter="0" textAlign="center" textColor="0x92422c" fontFamily="KaiTi"/>
+	<e:Label id="l3" text="1" width="150" right="9" verticalCenter="0" textAlign="center" textColor="0x92422c" fontFamily="KaiTi"/>
+</e:Skin>

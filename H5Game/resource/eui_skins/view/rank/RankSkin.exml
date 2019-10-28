@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" titleS="phbtitle" x="0" y="0"/>
+	<e:Group y="136" horizontalCenter="0" width="650" anchorOffsetY="0" height="947">
+		<e:Image source="dikuang_ggg" scaleX="1" scaleY="1" left="0" top="0" bottom="0" right="0" scale9Grid="11,18,20,13"/>
+		<e:Scroller width="640" scrollPolicyV="on" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" top="139" bottom="12">
+			<e:Group x="1" y="2">
+			<e:DataGroup id="dg" scaleX="1" scaleY="1" width="100%">
+				<e:layout>
+				<e:VerticalLayout/>
+				</e:layout>
+			</e:DataGroup>
+			</e:Group>
+		</e:Scroller>
+		<e:Group horizontalCenter="0" y="80">
+			<e:Image x="0" y="0" source="rank3"/>
+			<e:Group x="40" verticalCenter="-1">
+			<e:Label id="l0" text="排行" textAlign="center" y="6" x="0" textColor="0xede4b3"/>
+			<e:Label id="l1" text="名字" textAlign="center" y="0" x="144" textColor="0xede4b3"/>
+			<e:Label id="l2" text="等级" textAlign="center" y="0" x="326" textColor="0xede4b3"/>
+			<e:Label id="l3" text="战力" textAlign="center" y="0" x="528" textColor="0xede4b3"/>
+			<e:layout>
+				<e:HorizontalLayout gap="100"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group bottom="192" horizontalCenter="0">
+		<e:Image x="0" source="rank2" y="0"/>
+		<e:Label id="r0" text="1111" textAlign="center" width="603" anchorOffsetX="0" horizontalCenter="0" verticalCenter="0" textColor="0xede4b3"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" top="147" scaleX="0.9" scaleY="0.9">
+		<ns1:ToggleBtn01 id="btn0" x="0" y="0" skinName="ToBtn000Skin" label="" s0="biaoqian_0003_战力榜" s1="biaoqian_0003_战力榜"/>
+		<ns1:ToggleBtn01 id="btn1" x="177" y="0" skinName="ToBtn000Skin" s0="biaoqian_0002_等级榜" s1="biaoqian_0002_等级榜"/>
+		<ns1:ToggleBtn01 id="btn2" x="354" y="0" skinName="ToBtn000Skin" s0="biaoqian_0001_土豪榜" s1="biaoqian_0001_土豪榜"/>
+		<ns1:ToggleBtn01 id="btn3" x="364" y="10" skinName="ToBtn000Skin" s0="biaoqian_0000_竞技榜" s1="biaoqian_0000_竞技榜"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

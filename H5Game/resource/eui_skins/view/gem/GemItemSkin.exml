@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GemItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+    <ns1:BaseItem id="itemIcon" skinName="BaseItemSkin" horizontalCenter="0"/>
+	<e:Label id="labLv" text="Lv.1" y="79" size="22" anchorOffsetX="0" width="90" fontFamily="Microsoft YaHei" textAlign="right" horizontalCenter="0"/>
+    <e:Group id="btnGroup" y="109" horizontalCenter="0">
+        <e:Button id="upBtn"  skinName="Btn001Skin" label="升级"/>
+        <e:Button id="downBtn" anchorOffsetX="0" y="51" skinName="Btn001Skin" label="卸下"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+    </e:Group>
+	<e:Group id="g0" y="53" horizontalCenter="0" touchChildren="false" touchEnabled="false"/>
+</e:Skin>

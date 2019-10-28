@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AdvancedSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Component skinName=""/>
+    <ns1:ForgeItem id="item" skinName="EquipSkin" y="410.81" horizontalCenter="0"/>
+    <ns1:ForgeTypeView id="curr" skinName="ForgeTypeSkin" y="815" width="180" horizontalCenter="-165"/>
+	<ns1:ForgeTypeView id="curr0" skinName="ForgeTypeSkin" y="815" width="180" horizontalCenter="165"/>
+    <e:Group id="strengGroup" anchorOffsetY="0" height="133" anchorOffsetX="0" width="693" horizontalCenter="0" bottom="170">
+        <e:Button id="avdBtn" label="升阶" x="411.54" skinName="Btn002Skin" verticalCenter="0"/>
+		<ns1:ItemIcon id="needItem" x="107.03" y="5" skinName="ItemIconSkin"/>
+			<e:Label id="labName" text="进阶石" x="222" y="17" size="24" fontFamily="Microsoft YaHei" textAlign="left" width="115" textColor="0x92422c"/>
+			<e:Label text="" x="225.04" y="72.58" size="24" fontFamily="Microsoft YaHei" textAlign="left" width="115" id="labName0"/>
+    </e:Group>
+	<ns1:StarIcon id="star" y="312" skinName="StarSkin" horizontalCenter="0" scaleX="0.7" scaleY="0.7"/>
+	<e:Group id="g0" horizontalCenter="0" y="464"/>
+</e:Skin>

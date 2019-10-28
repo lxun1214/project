@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tips_skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="200" height="45" horizontalCenter="0" verticalCenter="0">
+		<e:Rect id="bg" fillAlpha="0.5" visible="false"/>
+		<e:Image width="20" height="20" x="8" y="15"/>
+		<e:Label id="label" text="阿斯蒂芬阿斯蒂芬" x="0" fontFamily="Microsoft YaHei" size="30" verticalAlign="middle" textAlign="center"  verticalCenter="0" textColor="0xffffff"/>
+        
+    </e:Group>
+</e:Skin>

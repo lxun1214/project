@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PVESkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="fbtitle"/>
+	<e:Scroller width="650" scrollPolicyH="off" anchorOffsetY="0" horizontalCenter="-2" anchorOffsetX="0" top="132" bottom="156">
+		<e:DataGroup id="ls" x="1" y="293" itemRenderer="PVERender">
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center"/>
+		</e:layout>
+		</e:DataGroup>
+	</e:Scroller>
+</e:Skin>

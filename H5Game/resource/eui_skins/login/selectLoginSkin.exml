@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="selectLoginSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="newBg01_jpg" width="750" x="0" height="1334" y="0"/>
+	<e:Image y="147" horizontalCenter="0" source=""/>
+	<e:Button id="b1" label="" y="1193" horizontalCenter="0.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="login0" source.down="login01"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="bg" y="1115" source="login03" horizontalCenter="0.5"/>
+	<e:Label id="l1" text="选择服务" y="1113" width="353" textAlign="center" horizontalCenter="-1.5" textColor="0xffffff" size="35" anchorOffsetY="0" height="52" anchorOffsetX="0" verticalAlign="middle" touchEnabled="false"/>
+	<e:Label text="选择服务器" x="553" y="1136" textColor="0x07fc10" size="20" stroke="0.5" italic="false" touchEnabled="false"/>
+	<e:Group id="g0" width="750" height="1040" x="0" y="48" anchorOffsetY="0" visible="false">
+		<e:Rect id="r" fillAlpha="0.5" top="-48" left="0" right="0" bottom="-294"/>
+		<e:Image id="r0" source="em14" scale9Grid="318,67,35,12" top="0" bottom="0" horizontalCenter="176.5"/>
+		<e:Image id="l" source="em14" scale9Grid="318,67,35,12" scaleX="-1" top="0" bottom="0" horizontalCenter="-176.5" x="10" y="10"/>
+		<e:Label text="服务器列表" y="12" textColor="0x774919" bold="true" textAlign="center" horizontalCenter="0"/>
+		<e:Group y="200" left="50" right="50" anchorOffsetY="0" height="799">
+		<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" source="dikuang_ggg" left="0" right="0" top="0" bottom="0" scale9Grid="18,21,9,8"/>
+		<e:Scroller anchorOffsetY="0" scaleX="1" scaleY="1" scrollPolicyV="on" anchorOffsetX="0" horizontalCenter="0.5" top="20" bottom="20">
+			<e:Group x="-1">
+			<e:DataGroup id="da" scaleX="1" scaleY="1" itemRenderer="serverDataRender" itemRendererSkinName="serverDataRenderskin" width="100%">
+				<e:layout>
+				<e:VerticalLayout/>
+				</e:layout>
+			</e:DataGroup>
+			</e:Group>
+		</e:Scroller>
+		</e:Group>
+		<e:Group x="80" y="74">
+		<e:Label text="最后登陆" x="25" y="5" scaleX="1" scaleY="1" bold="true" fontFamily="KaiTi" textColor="0xf73500"/>
+		<e:Group y="40" x="0">
+			<e:Image y="0" source="login05" scaleX="1" scaleY="1"/>
+			<e:Label id="l2" text="xxxx" width="250" textAlign="center" scaleX="1" scaleY="1" textColor="0xffffff" rotation="360" horizontalCenter="0" fontFamily="KaiTi" verticalCenter="0" verticalAlign="middle" bold="true" stroke="0.5"/>
+		</e:Group>
+		<e:Label text="推荐" x="350" y="4" scaleX="1" scaleY="1" textColor="0x07f752" fontFamily="KaiTi" bold="true"/>
+		<e:Group y="40" x="323">
+			<e:Image y="0" source="login05" scaleX="1" scaleY="1"/>
+			<e:Label id="l0" text="xxxx" width="250" textAlign="center" scaleX="1" scaleY="1" textColor="0xFFFFFF" rotation="360" horizontalCenter="0" fontFamily="KaiTi" verticalCenter="0" bold="true" stroke="0.5"/>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

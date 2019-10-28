@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillCompeonentSkin" width="176" height="138" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="w1" horizontalCenter="0" top="0" source="ww2"/>
+	<e:Image id="icon" width="89" height="89" touchEnabled="false" source="" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-1.5" verticalCenter="-12.5"/>
+	<e:Label id="sname" text="" y="110" anchorOffsetX="0" width="148" horizontalCenter="0" textAlign="center" size="24" touchEnabled="false" textColor="0xede4b3" strokeColor="0x894e2a" stroke="3" fontFamily="Microsoft YaHei"/>
+	<e:Label id="cd" text="" size="20" verticalCenter="-13.5" horizontalCenter="0" width="100%" textAlign="center" touchEnabled="false" textColor="0xf70202" stroke="0.5" bold="true"/>
+	<e:Rect id="rc" fillAlpha="0.5" width="102" height="102" horizontalCenter="0" verticalCenter="-12" touchEnabled="false" visible="false"/>
+	<e:Image id="suo" source="suo" horizontalCenter="0" verticalCenter="-10.5" x="-48" y="-20" scaleX="1" scaleY="1"/>
+</e:Skin>

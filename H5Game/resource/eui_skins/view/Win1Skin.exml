@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Win1Skin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group id="g0" verticalCenter="0" left="0" right="0" height="1043">
+		<e:Image id="r" source="em14" scale9Grid="318,67,35,12" top="0" bottom="0" horizontalCenter="176.5"/>
+		<e:Image id="l" source="em14" scale9Grid="318,67,35,12" scaleX="-1" top="0" bottom="0" horizontalCenter="-175.5"/>
+		<e:Label id="title" text="邮  件" y="11" textColor="0x774919" bold="true" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

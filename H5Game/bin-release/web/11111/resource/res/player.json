@@ -1,0 +1,8 @@
+{"file":"player.png","frames":{
+"锻造":{"x":375,"y":1,"w":80,"h":38,"offX":2,"offY":3,"sourceW":84,"sourceH":44},
+"xiang_1":{"x":375,"y":41,"w":55,"h":55,"offX":0,"offY":0,"sourceW":55,"sourceH":55},
+"xiang_2":{"x":457,"y":1,"w":48,"h":48,"offX":4,"offY":4,"sourceW":55,"sourceH":55},
+"pbg0":{"x":1,"y":1,"w":290,"h":64,"offX":0,"offY":0,"sourceW":290,"sourceH":64},
+"pbg1":{"x":432,"y":51,"w":52,"h":32,"offX":0,"offY":0,"sourceW":52,"sourceH":32},
+"power11":{"x":293,"y":43,"w":65,"h":30,"offX":2,"offY":2,"sourceW":69,"sourceH":34},
+"神器":{"x":293,"y":1,"w":80,"h":40,"offX":2,"offY":1,"sourceW":84,"sourceH":43}}}

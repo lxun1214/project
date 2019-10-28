@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FightResultSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rc" left="0" right="0" top="0" bottom="0" strokeAlpha="0.5" fillAlpha="0.5"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image id="re" source="组-4_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="s5" height="176" width="376" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="17">
+			<e:Image width="376" height="200" y="-12" source="矩形-5-拷贝" scale9Grid="26,18,8,18" scaleX="1" scaleY="1"/>
+			<e:Label id="ww" text="很遗憾!" x="20" verticalCenter="-54" size="28" textColor="0x09f945" fontFamily="KaiTi" bold="true"/>
+			<e:Label text="当前排名上升至:XXX" x="97" verticalCenter="18" id="ww0" size="24" textColor="0xffffff" bold="true" fontFamily="KaiTi"/>
+			<e:Image id="i0" x="21" source="result11" verticalCenter="18.5"/>
+		</e:Group>
+		<e:Group id="s6" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="83.5" visible="false">
+			<e:Group x="0" y="0">
+				<e:Image height="45" source="矩形-5-拷贝" scale9Grid="26,18,8,18" scaleX="1" scaleY="1" anchorOffsetY="0" y="0" left="0" right="0"/>
+				<e:Label id="ww1" text="革命尚未成功,同志仍需努力!" x="2" size="28" verticalCenter="0.5" fontFamily="KaiTi" textColor="0x14f902" bold="true"/>
+			</e:Group>
+			<e:DataGroup id="items" width="376" height="271" anchorOffsetY="0" itemRendererSkinName="BaseItemSkin" anchorOffsetX="0" y="60">
+			<e:layout>
+				<e:TileLayout requestedRowCount="4" requestedColumnCount="3" horizontalGap="20"/>
+			</e:layout>
+			</e:DataGroup>
+		</e:Group>
+		<e:Button label="确定" horizontalCenter="0" icon="" skinName="Btn007Skin" x="191" scaleX="1" scaleY="1" verticalCenter="308.5"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StarSkin" width="520" height="50" xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0">
+		<e:Image source="star2" x="0" y="0"/>
+		<e:Image source="star2" x="20" y="0"/>
+		<e:Image source="star2" x="40" y="0"/>
+		<e:Image source="star2" x="60" y="0"/>
+		<e:Image source="star2" x="160" y="0"/>
+		<e:Image source="star2" x="80" y="0"/>
+		<e:Image source="star2" x="100" y="0"/>
+		<e:Image source="star2" x="120" y="0"/>
+		<e:Image source="star2" x="140" y="0"/>
+		<e:Image source="star2" x="180" y="0"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Group x="0">
+		<e:Image id="star0" source="star1" x="0" y="0"/>
+		<e:Image id="star1" source="star1" x="20" y="0"/>
+		<e:Image id="star2" source="star1" x="40" y="0"/>
+		<e:Image id="star3" source="star1" x="60" y="0"/>
+		<e:Image id="star4" source="star1" x="80" y="0"/>
+		<e:Image id="star5" source="star1" x="100" y="0"/>
+		<e:Image id="star6" source="star1" x="120" y="0"/>
+		<e:Image id="star7" source="star1" x="140" y="0"/>
+		<e:Image id="star8" source="star1" x="160" y="0"/>
+		<e:Image id="star9" source="star1" x="180" y="13" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="cztitle"/>
+	<e:Image anchorOffsetX="0" y="133" source="dikuang_ggg" anchorOffsetY="0" width="643" height="1030" horizontalCenter="0" scale9Grid="21,20,8,8"/>
+	<e:Scroller y="155" anchorOffsetY="0" anchorOffsetX="0" width="612" height="991" horizontalCenter="0" scrollPolicyH="off" locked="true">
+		<e:DataGroup id="reItemGroup" scrollEnabled="true" anchorOffsetY="0" height="1032" x="0" y="1">
+			<e:layout>
+				<e:TileLayout requestedColumnCount="2" verticalGap="10" horizontalAlign="center" verticalAlign="top" columnAlign="left" rowHeight="220" paddingLeft="0" horizontalGap="5"/>
+			</e:layout>
+		</e:DataGroup>
+	</e:Scroller>
+	<e:Label text="首次充值可获得对应额度所赠送的百分比钻石!" y="1117" textColor="0xf70707" horizontalCenter="0" fontFamily="KaiTi_GB2312" bold="true" size="28"/>
+</e:Skin>

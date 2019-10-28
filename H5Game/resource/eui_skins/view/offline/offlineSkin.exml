@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="offlineSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin1 top="0" bottom="0" left="0" right="0" titleS="离 线 信 息" bgH="500" skinName="Win2Skin"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" anchorOffsetY="0" height="500" width="612" touchEnabled="false">
+		<e:Label id="l0" text="xxxxxxxxxxx" size="24" width="500" textAlign="center" x="55" y="92" textColor="0xf70707" fontFamily="KaiTi" bold="true"/>
+		<e:Button id="b1" label="" skinName="Btn002Skin" icon="确定" x="199" bottom="28"/>
+		<e:Group y="138" x="29" anchorOffsetY="0" height="234">
+			<e:Image anchorOffsetY="0" height="184" source="dikuang_ggg" x="0" y="49" anchorOffsetX="0" width="260" scale9Grid="21,21,14,7"/>
+			<e:Image source="dikuang_ggg" anchorOffsetY="0" height="184" x="293" y="49" anchorOffsetX="0" width="260" scale9Grid="28,20,7,7"/>
+			<e:Image anchorOffsetY="0" x="28" y="0" anchorOffsetX="0" source="off12"/>
+			<e:Image anchorOffsetY="0" x="356" y="2" anchorOffsetX="0" source="off13"/>
+			<e:Button id="b0" label="" icon="前往激活" skinName="Btn005Skin" x="341" y="160"/>
+			<e:Group x="8" y="66">
+				<e:Group x="0" y="0">
+					<e:Label text="经验：" y="8" textColor="0x774919" x="0" size="25" bold="true"/>
+					<e:Image source="shop5" anchorOffsetY="0" height="41" x="71" y="0"/>
+					<e:Label id="l1" text="Label" size="30" width="120" x="85" y="6"/>
+				</e:Group>
+				<e:Group x="2" y="51">
+					<e:Label text="金币：" y="8" textColor="0x774919" x="0" size="25" bold="true"/>
+					<e:Image source="shop5" anchorOffsetY="0" height="41" x="71" y="0"/>
+					<e:Label id="l2" text="Label" size="30" width="120" x="85" y="6"/>
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout gap="10"/>
+				</e:layout>
+			</e:Group>
+			<e:Group x="306" y="66">
+				<e:Group x="0" y="0">
+					<e:Label text="经验：" y="8" textColor="0x774919" x="0" size="25" bold="true"/>
+					<e:Image source="shop5" anchorOffsetY="0" height="41" x="71" y="0"/>
+					<e:Label id="l4" text="Label" size="30" textAlign="center" y="8" x="89"/>
+				</e:Group>
+				<e:Group x="0" y="0">
+					<e:Label text="金币：" y="8" textColor="0x774919" x="0" size="25" bold="true"/>
+					<e:Image source="shop5" anchorOffsetY="0" height="41" x="71" y="0"/>
+					<e:Label id="l5" text="Label" size="30" textAlign="center" y="8" x="89"/>
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

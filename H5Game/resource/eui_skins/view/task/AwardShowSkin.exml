@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AwardShowSkin" width="140" height="40" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="goldImg" x="0" scaleX="0.4" scaleY="0.4" verticalCenter="0" source=""/>
+	<e:Label id="labGold" text="111" x="52" fontFamily="Microsoft YaHei" anchorOffsetX="0" width="90" size="24" verticalCenter="0" bold="true" stroke="0.1" textColor="0xf7093c"/>
+</e:Skin>

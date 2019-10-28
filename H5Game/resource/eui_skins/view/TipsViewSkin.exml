@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipsViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin1 id="win1" top="0" bottom="0" left="0" right="0" titleS="离 线 信 息" bgH="400" skinName="Win2Skin"/>
+    <e:Group anchorOffsetX="0" horizontalCenter="0" verticalCenter="0" width="612" height="320" touchEnabled="false">   
+			<e:Button id="buyBtn1" label="确  定" icon="" skinName="Btn005Skin" bottom="24" horizontalCenter="-150.5"/>
+			<e:Button id="buyBtn0" label="确  定" icon="" horizontalCenter="-0.5" skinName="Btn005Skin" bottom="24"/>
+        <e:Button id="buyBtn2" label="确  定" icon="" skinName="Btn005Skin" bottom="24" horizontalCenter="149.5"/>
+			<e:Label id="labDesc" text="这是个提示弹窗这是个提示弹窗这是个提示弹窗这是个提示弹窗这是个提示弹窗这是个提示弹窗这是个提示弹窗这是个提示弹窗" y="74.36" size="26" fontFamily="KaiTi" anchorOffsetX="0" width="553.21" anchorOffsetY="0" height="139.64" verticalAlign="middle" textAlign="center" horizontalCenter="-0.5" textColor="0xf40e0e" bold="true"/>
+    </e:Group>
+	
+</e:Skin>

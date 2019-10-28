@@ -1,0 +1,7 @@
+{
+  "global": {
+    "globalAutoLayerMarkEnable": false,
+    "globalAdsorbEnable": false,
+    "globalRulerEnable": false
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AchieveRenderSkin" width="650" height="185" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="kuang_jgg11" left="0" top="0" bottom="0" right="0" scale9Grid="30,29,5,5"/>
+	<ns1:BaseItem id="items" x="22" y="62" skinName="BaseItemSkin"/>
+	<e:Button id="btn1" label="领取奖励" verticalCenter="0" skinName="Btn005Skin" right="20">
+	</e:Button>
+	<e:Label id="l0" text="奖励:" x="5" y="25" size="26" anchorOffsetY="0" height="30" anchorOffsetX="0" width="149" lineSpacing="5" verticalAlign="middle" textAlign="center" textColor="0xede4b3" strokeColor="0x894e2a" stroke="3" fontFamily="Microsoft YaHei"/>
+	<e:Image id="btn" source="dacheng1" right="50" verticalCenter="0"/>
+	<e:Group x="155" y="52" anchorOffsetX="0" width="363" anchorOffsetY="0" height="109">
+		<e:Image source="圆角矩形-5" left="0" right="0" top="0" bottom="0" scale9Grid="35,12,72,76"/>
+		<e:Label id="l1" text=".1111" x="15" y="17" anchorOffsetX="0" width="340" verticalAlign="middle" textColor="0xede4b3" strokeColor="0xaa7849" stroke="2" size="24" fontFamily="Microsoft YaHei"/>
+		<e:Label id="l2" text="奖励:" x="15" y="67" size="24" anchorOffsetY="0" height="30" anchorOffsetX="0" width="57" lineSpacing="5" verticalAlign="middle" textColor="0xede4b3" fontFamily="Microsoft YaHei" strokeColor="0xaa7849" stroke="2"/>
+		<e:Group id="g0" width="280" height="40" x="78" y="62" anchorOffsetY="0" anchorOffsetX="0">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

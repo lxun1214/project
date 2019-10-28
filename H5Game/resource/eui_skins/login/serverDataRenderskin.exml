@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="serverDataRenderskin" width="636" height="67" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="login06" horizontalCenter="0" verticalCenter="0" scale9Grid="79,8,478,34"/>
+	<e:Image id="l1" source="火爆" verticalCenter="0" right="51"/>
+	<e:Label id="l0" text="Label" x="28" width="480" verticalCenter="0" anchorOffsetX="0" size="28" fontFamily="KaiTi" bold="true" stroke="0.5"/>
+</e:Skin>

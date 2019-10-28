@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NoticeSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin1 top="0" bottom="0" left="0" right="0" titleS="公  告" bgH="1043" skinName="Win1Skin"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="706" height="1043">
+		<e:Button id="btn0" label="返回" x="268" y="932.5" skinName="Btn002Skin"/>
+		<e:Image anchorOffsetX="0" width="664" anchorOffsetY="0" height="854" y="64.5" source="dikuang_ggg" horizontalCenter="0" scale9Grid="20,19,10,9"/>
+		<e:Label id="l0" text="Label" anchorOffsetY="0" height="753" anchorOffsetX="0" width="628" y="143.5" lineSpacing="10" horizontalCenter="0" textAlign="center" fontFamily="Microsoft YaHei" size="24" bold="true" textColor="0x071ff9"/>
+		<e:Label id="l1" text="Label" y="85" width="500" horizontalCenter="0" textAlign="center" textColor="0xfc0524" fontFamily="Microsoft YaHei" bold="true" size="28"/>
+	</e:Group>
+</e:Skin>

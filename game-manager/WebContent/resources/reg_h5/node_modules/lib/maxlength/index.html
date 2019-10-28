@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>maxlength.js</title>
+	<style>
+		textarea {
+			width: 400px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<textarea rows="6" cols="10" maxlength="30"></textarea>
+	<br />
+	<textarea rows="6" cols="10" maxlength="30" data-info-pane=".char-count1" data-message-format="Total - {total}; Remaining - {remaining}"></textarea>
+	<div class="char-count1"></div>
+	<br />
+	<textarea rows="6" cols="10" maxlength="30" data-info-pane=".char-count2" data-message-format="{used} of {total}"></textarea>
+	<div class="char-count2"></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="maxlength.js"></script>
+</body>
+</html>

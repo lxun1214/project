@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ReplaceItemSkin" width="590" height="180" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="kuang_jgg11" scale9Grid="31,30,3,5" left="0" top="0" bottom="0" right="0"/>
+    <ns1:BaseItem id="itemIcon" y="25" x="24" skinName="BaseItemSkin"/>
+	<e:Group id="g0" x="145" y="15">
+		<e:BitmapLabel id="eFighting" x="79" y="6" font="power_fnt" text="0000"/>
+		<e:Image x="6" y="0" source="power11"/>
+		<e:Group x="0" y="37" anchorOffsetY="0" height="118" anchorOffsetX="0" width="330">
+			<e:Label id="labType0" text="物理攻击:99999" x="0" y="0" textAlign="left" fontFamily="Microsoft YaHei" size="22" textColor="0x92422c" bold="true"/>
+			<e:Label text="攻击：99999" x="169" y="1" textAlign="left" fontFamily="Microsoft YaHei" size="22" id="labType1" bold="true" textColor="0x92422c"/>
+			<e:Label text="攻击：99999" y="32" textAlign="left" fontFamily="Microsoft YaHei" size="22" id="labType2" textColor="0x92422c" bold="true"/>
+			<e:Label text="物理攻击:99999" x="169" y="66" textAlign="left" fontFamily="Microsoft YaHei" size="22" id="labType3" bold="true" textColor="0x92422c"/>
+			<e:layout>
+			<e:VerticalLayout gap="8"/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="repBtn" label="装备" x="334" icon="" skinName="Btn000Skin" y="51"/>
+	</e:Group>
+</e:Skin>

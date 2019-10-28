@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="t_3"/>
+	<e:Group y="1080" horizontalCenter="0">
+		<e:TextInput id="txt" width="487" height="53" x="0" anchorOffsetY="0" anchorOffsetX="0" verticalCenter="0.5"/>
+		<e:Button id="btn" label="发送" x="492" skinName="Btn005Skin" verticalCenter="0" scaleX="0.8" scaleY="0.9"/>
+	</e:Group>
+	<e:Group horizontalCenter="0.5" anchorOffsetX="0" width="655" top="139" bottom="264" anchorOffsetY="0">
+		<e:Image anchorOffsetX="0" source="dikuang_ggg" anchorOffsetY="0" scale9Grid="11,11,15,17" left="0" right="0" top="0" bottom="0"/>
+		<e:Scroller left="10" top="10" right="10" bottom="10">
+			<e:Group id="g0">
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

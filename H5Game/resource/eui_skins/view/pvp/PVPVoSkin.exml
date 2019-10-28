@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PVPVoSkin" width="300" height="400" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="eff" y="37" horizontalCenter="0" source="" visible="false"/>
+	<e:Image source="pvp07" bottom="76" horizontalCenter="0"/>
+	<e:Image source="pvp13" bottom="0" horizontalCenter="0"/>
+	<e:Label id="rname" text="111" anchorOffsetY="0" height="22" size="22" width="180" textAlign="center" bottom="30" horizontalCenter="0" textColor="0xede4b3"/>
+	<e:Label id="power" text="111" anchorOffsetY="0" height="22" size="22" width="180" textAlign="center" bottom="3" horizontalCenter="0" textColor="0xede4b3"/>
+	<e:Label id="rank" text="111" anchorOffsetY="0" height="22" size="22" width="180" textAlign="center" bottom="58" horizontalCenter="0" textColor="0xede4b3"/>
+	<e:Image id="icon" horizontalCenter="0" top="0" source=""/>
+	<e:Image id="role" y="7" horizontalCenter="11" source="" scaleX="0.65" scaleY="0.65"/>
+</e:Skin>

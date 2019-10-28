@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BaseItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <ns1:ItemIcon id="itemIcon" skinName="ItemIconSkin"/>
+	<e:Image id="imgBg"  source=""/>
+	<e:Label id="labCount" text="" x="32" y="82" size="22" textAlign="right" anchorOffsetX="0" width="70" fontFamily="KaiTi" textColor="0xffffff"/>
+	<e:Label id="labName" text="" y="112" anchorOffsetX="0" width="110" size="22" textAlign="center" fontFamily="Microsoft YaHei" strokeColor="0x894e2a" stroke="2" background="false" backgroundColor="0xbbbca2" bold="true"/>
+	<e:Label id="jie" text="" x="32" y="7" size="22" anchorOffsetX="0" width="73" textAlign="right" fontFamily="KaiTi" touchEnabled="false" bold="true" stroke="1" textColor="0xff07db"/>
+</e:Skin>

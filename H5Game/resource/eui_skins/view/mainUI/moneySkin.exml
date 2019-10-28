@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="moneySkin" width="191" height="36" xmlns:e="http://ns.egret.com/eui">
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" source="jbbg" verticalCenter="0" right="0"/>
+	<e:Image id="goldImg" x="0" scaleX="0.4" scaleY="0.4" verticalCenter="0" source=""/>
+	<e:Label id="labGold" text="999999" fontFamily="Microsoft YaHei" anchorOffsetX="0" width="113" size="20" verticalCenter="0" right="33" textColor="0xede4b3"/>
+	<e:Button id="addGBtn" label="" anchorOffsetX="0" anchorOffsetY="0" right="0" verticalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="zengjia" source.down="zengjia2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

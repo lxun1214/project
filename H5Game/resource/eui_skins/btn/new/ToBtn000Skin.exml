@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ToBtn000Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down" >
+	<e:Image id="a1" includeIn="down" horizontalCenter="0" verticalCenter="0" source="anniu_30"/>
+	<e:Image id="n1" includeIn="down" source="" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="a0" includeIn="up" horizontalCenter="0" verticalCenter="0" source="anniu_10"/>
+	<e:Image id="n0" includeIn="up" source="" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8" size="20" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center"/>
+	<e:Image id="red" source="red" right="-16" top="-16" visible="false"/>
+</e:Skin>

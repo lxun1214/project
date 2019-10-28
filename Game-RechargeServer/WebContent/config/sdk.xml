@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--sdk配置 -->
+<sdkInfoList>
+   <sdkInfo>
+        <!-- 手游迷 -->
+		<sdkType>1</sdkType>
+		<gameId>GID1532413959551</gameId>
+		<appId>86e224f185bbcb536c9567c0fccc0eed</appId>
+		<appKey>7002568415863fd467a2c3c72fe244ed7a3e5297</appKey>
+		<appSecret>UyN2NhYmIxMTAyYmM1NWZhYmEwNzliMDBkYjAwMzA2N2Ix</appSecret>
+		<accessToken>JiYzlmZmQwNjg1MzI3YWFmZjA4OWRjOGNmNzYxMzQ0YTE3</accessToken>
+   </sdkInfo>
+   
+    <sdkInfo>
+        <!-- 久乐 -->
+		<sdkType>2</sdkType>
+		<gameId>2</gameId>
+		<appId>2</appId>
+		<appKey>271b0ada7d654e86621d72cfc7979ced</appKey>
+		<appSecret>2</appSecret>
+		<accessToken>2</accessToken>
+   </sdkInfo>
+</sdkInfoList>

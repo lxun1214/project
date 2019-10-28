@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ForgeTypeSkin" width="180" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller anchorOffsetX="0" anchorOffsetY="0" width="100%" height="100%">
+		<e:Group width="100%" height="100%">
+		<e:DataGroup id="dg0" verticalCenter="0" width="100%" x="0">
+			<e:layout>
+				<e:VerticalLayout gap="15"/>
+			</e:layout>
+		</e:DataGroup>
+		</e:Group>
+	</e:Scroller>
+	<e:Label id="l0" text="已达极限" textColor="0xf90707" verticalCenter="0" horizontalCenter="0" textAlign="center"/>
+</e:Skin>

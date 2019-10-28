@@ -1,0 +1,32 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<e:Skin class="UIViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="btnGroup" top="0" bottom="0" anchorOffsetY="0" left="0" right="0">
+		<e:Group y="433" left="15">
+		<e:Button id="mailBtn" label="Button" x="0" y="0" skinName="Btn27Skin"/>
+		<e:Button id="rankBtn" label="Button" x="0" y="125" skinName="Btn23Skin"/>
+		<e:Button id="taskBtn" label="Button" x="0" y="250.01" skinName="Btn24Skin"/>
+		<e:Button id="shopBtn" label="Button" x="0" y="383.34" skinName="Btn25Skin"/>
+		</e:Group>
+		<e:Group y="358.79" right="46">
+		<e:Button id="noticeBtn" label="Button" x="0" y="0" skinName="Btn21Skin"/>
+		<e:Button id="newsBtn" label="Button" x="0" y="130.67" skinName="Btn26Skin" visible="false"/>
+		<e:Button id="arenaBtn" label="Button" x="0" y="324.22" skinName="Btn22Skin"/>
+		<e:Button id="copyBtn" label="Button" x="0" y="457.55" skinName="Btn20Skin"/>
+		</e:Group>
+	</e:Group>
+	<e:Group x="0" y="1167">
+		<e:Image source="xk" scale9Grid="264,10,151,67" x="0" y="80" scaleX="1" scaleY="1"/>
+		<e:Group id="g0" width="649" anchorOffsetY="0" height="139" anchorOffsetX="0" x="51" y="0">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="0" verticalAlign="bottom"/>
+			</e:layout>
+			<ns1:Btn01 id="roleBtn" x="22" y="-233" skinName="MainBtnSkin" s0="1" s1="1_1"/>
+			<ns1:Btn01 id="bagBtn" skinName="MainBtnSkin" x="22" y="-233" s0="2" s1="2_2"/>
+			<ns1:Btn01 id="riskBtn" skinName="MainBtnSkin" x="22" y="-233" width="151" height="139" s0="7" s1="7_7"/>
+			<ns1:Btn01 id="skillBtn" skinName="MainBtnSkin" x="384.40000000000003" y="-233" s0="5" s1="5_5"/>
+			<ns1:Btn01 id="achieveBtn" skinName="MainBtnSkin" x="22" y="-233" s0="8" s1="8_8"/>
+		</e:Group>
+	</e:Group>
+	
+	
+</e:Skin>

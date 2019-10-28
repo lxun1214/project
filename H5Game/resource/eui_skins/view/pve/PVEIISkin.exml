@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PVEIISkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="fbtitle"/>
+	<e:Scroller width="660" scrollPolicyH="off" anchorOffsetY="0" height="1046" y="128" anchorOffsetX="0" horizontalCenter="-3">
+		<e:DataGroup id="ls" x="2" y="1" itemRenderer="PVERenderII" anchorOffsetY="0" height="1048">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:DataGroup>
+	</e:Scroller>
+	<e:Group height="114" width="736" horizontalCenter="0" bottom="9" visible="false">
+		<e:ToggleButton id="newCloseBtn" icon="6" skinName="MainBtnSkin" bottom="15" left="137" x="56" y="-6" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle" gap="3" horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

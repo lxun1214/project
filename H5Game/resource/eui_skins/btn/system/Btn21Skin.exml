@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Btn21Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui" >
+	<e:Image includeIn="up" source="tb_dikuang_1" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+	<e:Image includeIn="down" source="tb_dikuang_1" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+	<e:Image includeIn="disabled" source="tb_dikuang_1" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="mb_2" left="0" right="0" top.disabled="0" top.up="0" bottom="0" source.down="mb_20" source.disabled="mb_2"  source.up="mb_2" />
+</e:Skin>

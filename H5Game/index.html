@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>仙侠传</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+		body {
+			background: #888888;
+		}
+		*{
+				margin:0;
+				padding:0;
+			}
+			html,body{
+				height: 100%;
+			}
+			.page{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			    overflow: hidden;
+			}
+			#logo{
+				width:528px;
+				height:248px;
+				background: url();
+				position:absolute;z-index:-1;
+				top:60px;
+			}
+			#loading{
+				width:1.24rem;
+				height:1.24rem;
+				background: url(./resource/loading.gif);
+				background-size: cover;
+			}
+			#loading2{
+				width: 0;
+				height: 100%;
+				background: url();
+				background-size: cover;
+			}
+    </style>
+</head>
+<body>
+		<div class="page">
+			<div id="loading">
+				<div  id="loading2"></div>
+			</div>
+			<div id="logo"></div>
+		</div>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="showAll"
+         data-frame-rate="30"
+         data-content-width="750"
+         data-content-height="1334"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+<script>
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function () {
+                        win.removeEventListener(resizeEvt, recalc, false);
+				        doc.removeEventListener('DOMContentLoaded', recalc, false);
+						var clientWidth = docEl.clientWidth;
+						var clientH = docEl.clientHeight;
+						if (!clientWidth) return;
+						if(clientWidth>=750){
+							docEl.style.fontSize = '100px';
+						}else{
+							docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+						}
+						//BGII.style.height = (clientH>=1334?1344:clientH) + 'px';
+					};
+
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+    var loadScript = function (list, callback) {
+        var loaded = 0;
+        var loadNext = function () {
+            loadSingleScript(list[loaded], function () {
+                loaded++;
+                //showLoad(loaded,list.length);
+                if (loaded >= list.length) {
+                    callback();
+                }
+                else {
+                    loadNext();
+                }
+            })
+        };
+        loadNext();
+    };
+
+    var loadSingleScript = function (src, callback) {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = src;
+        s.addEventListener('load', function () {
+            s.parentNode.removeChild(s);
+            s.removeEventListener('load', arguments.callee, false);
+            callback();
+        }, false);
+        document.body.appendChild(s);
+    };
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+    xhr.addEventListener("load", function () {
+        var manifest = JSON.parse(xhr.response);
+        var list = manifest.initial.concat(manifest.game);
+        loadScript(list, function () {
+            /**
+             * {
+             * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+             * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+             * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+             * "calculateCanvasScaleFactor": //a function return canvas scale factor
+             * }
+             **/
+            //showLoad(-2);
+			var o = getParams();
+            var gameParam = {};
+            gameParam.serverUrl = "http://106.12.117.205:8080/";
+			gameParam.synRes = "resource";
+            gameParam.ressite = "";
+            gameParam.ver = 0;
+            window["gameParam"] = gameParam;
+            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+                var backingStore = context.backingStorePixelRatio ||
+                    context.webkitBackingStorePixelRatio ||
+                    context.mozBackingStorePixelRatio ||
+                    context.msBackingStorePixelRatio ||
+                    context.oBackingStorePixelRatio ||
+                    context.backingStorePixelRatio || 1;
+                return (window.devicePixelRatio || 1) / backingStore;
+            }});
+        });
+    });
+	function getParams()
+{
+	var params = new Object();
+	var query = document.location.search.substr(1);
+	var pairs = query.split("&");
+	for ( var i=0; i<pairs.length; i++ )
+	{
+		var index = pairs[i].indexOf("=");
+		if ( index <= 0 )
+		{
+			continue;
+		}
+		var paramName = pairs[i].substr(0, index);
+		var paramValue = pairs[i].substr(index + 1);
+		params[paramName] = paramValue;
+	}
+	return params;
+}
+	window.onresize = on_resize;
+	        function on_resize() {
+            var winWidth = 0;
+            var winHeight = 0;
+
+            if (window.innerWidth)
+                winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+                winWidth = document.body.clientWidth;
+
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+            window_W_H(winWidth, winHeight);
+        }
+	        function window_W_H(width, height) {
+            try {
+                if (Main) {
+                    var appMain = Main.instance;
+                    appMain.window_W_H(width, height);
+                }
+            } catch (err) {
+            }
+        }
+    xhr.send(null);
+
+    function showLoad(v0,v1,s)
+    {
+        // var l0 = document.getElementById('loading')
+        // var l1 = document.getElementById('loading2')
+		// var logo = document.getElementById('logo')
+        // if(v0 != -1)
+        // {
+        //     logo.style.visibility = l0.style.visibility = l1.style.visibility = 'visible';
+        //     l1.style.width = (v0/v1)*100 + "%";
+        // }else if(v0 == -2)
+		// {
+		// 	logo.style.visibility = l0.style.visibility = l1.style.visibility = 'hidden';
+		// }
+		// else{
+			var parent=document.getElementsByClassName("page");
+			while(parent.length > 0){
+				parent[0].parentNode.removeChild(parent[0]);
+			// }
+        }
+    }
+</script>
+</body>
+
+</html>

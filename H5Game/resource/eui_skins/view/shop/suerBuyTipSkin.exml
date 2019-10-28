@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="suerBuyTipSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin1 top="0" bottom="0" left="0" right="0" titleS="离 线 信 息" bgH="500" skinName="Win2Skin"/>
+	<e:Group width="750" height="1334" touchEnabled="false" horizontalCenter="0" verticalCenter="0">
+		<e:Group y="661" horizontalCenter="0">
+			<e:Image id="goldImg" x="0" source="money_2" scaleX="0.7" scaleY="0.7" y="4"/>
+			<e:Label id="lbMoney" text="1000" x="36.1" y="0" textAlign="left"/>
+		</e:Group>
+		<e:Group y="564" horizontalCenter="0">
+			<e:TextInput id="lbNum" width="153" height="42" x="85" text="0" enabled="true" verticalCenter="0"/>
+			<e:Button id="samllBtn" label="" x="0" icon="-" anchorOffsetX="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="-" source.down="-1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="maxBtn" label="" x="246" icon="+" anchorOffsetX="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="+" source.down="+1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Button id="sureBtn" label="" y="720" icon="确定" horizontalCenter="0.5" skinName="Btn002Skin"/>
+
+    </e:Group>
+</e:Skin>

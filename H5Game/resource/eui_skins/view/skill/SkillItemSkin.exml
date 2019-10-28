@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="115" height="118">
+    <e:Component id="icon" skinName="ItemIconSkin" horizontalCenter="0"/>
+	<e:Label id="labName" text="111111" y="113" fontFamily="Microsoft YaHei" size="22" anchorOffsetX="0" width="146" textAlign="center" horizontalCenter="0.5" textColor="0xede4b3" strokeColor="0x894e2a" stroke="3"/>
+	<e:Image x="51" y="82" source="图层-3"/>
+	<e:Label id="labLv" text="LV:100" y="86" fontFamily="Microsoft YaHei" size="18" anchorOffsetX="0" width="60" right="4" textColor="0xede4b3"/>
+	<e:Label id="l0" text="装配中" y="6" anchorOffsetY="0" height="79" anchorOffsetX="0" width="25" right="5" size="25" bold="true" fontFamily="KaiTi" stroke="0.5" textColor="0x0241ff" background="true" border="false" borderColor="0xf90202" alpha="0.8" visible="false"/>
+	<e:Group id="suo" width="115" height="110" visible="false">
+		<e:Image source="suo" horizontalCenter="0" verticalCenter="0" x="-48" y="-20" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image id="red" source="red" right="0" top="0" visible="false"/>
+</e:Skin>

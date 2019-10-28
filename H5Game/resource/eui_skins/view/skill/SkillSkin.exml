@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="skillTitle"/>
+    <e:Group width="652" name="Group" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-2" top="138" bottom="160">
+			<e:Scroller scrollPolicyH="off" anchorOffsetY="0" left="0" right="0" top="0" bottom="0">
+				<e:Group id="itemGroup"/>
+			</e:Scroller>
+        </e:Group>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PProgressSkin" width="437" height="124" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="pro" y="0" horizontalCenter="0">
+		<e:Image horizontalCenter="0" verticalCenter="6" source="01"/>
+		<e:ProgressBar id="hp" x="27" y="43" value="50"/>
+		<e:Image horizontalCenter="-188.5" verticalCenter="0" source="02"/>
+		<e:Image horizontalCenter="-44.5" verticalCenter="0" source="02"/>
+		<e:Image source="boss" right="8" y="0"/>
+		<e:Label id="l1111" text="" size="28" width="80" verticalCenter="-1.5" textAlign="center" x="134"/>
+		<e:Label id="l0000" text="" size="28" width="80" verticalCenter="-1.5" textAlign="center" x="-12"/>
+	</e:Group>
+</e:Skin>

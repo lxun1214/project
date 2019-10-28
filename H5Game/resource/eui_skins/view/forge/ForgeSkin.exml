@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ForgeSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="t_5"/>
+	<e:Group anchorOffsetX="0" width="640" horizontalCenter="0" y="216">
+		<e:Image anchorOffsetX="0" source="dikuang_ggg" left="0" right="0" scale9Grid="27,29,6,4" anchorOffsetY="0" top="0" bottom="-8"/>
+		<e:Image anchorOffsetX="0" y="0" horizontalCenter="0" source="组-5_png"/>
+		<e:Group y="540" left="15" right="15" height="260">
+			<e:Image y="0" source="组-138" horizontalCenter="0"/>
+			<e:Image source="da-ditu1" left="0" top="39" right="0" scale9Grid="29,27,4,6" bottom="-3" anchorOffsetY="0"/>
+			<e:Label text="属性" y="13" horizontalCenter="0" textAlign="center" size="25"/>
+			<e:Image source="图层-812" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="29"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="圆角矩形-23" horizontalCenter="0.5" bottom="291"/>
+	<e:Group id="g0" y="543" horizontalCenter="0"/>
+	<e:Group anchorOffsetX="0" top="0" bottom="0" horizontalCenter="0">
+		<e:Group x="0" top="0" bottom="0">
+		<e:ViewStack id="viewStack" selectedIndex="2" anchorOffsetY="0" x="0" top="0" bottom="0">
+			<ns1:StrengthenPanel name="强 化" skinName="StrengSkin" anchorOffsetY="0" x="0" visible="false"/>
+			<ns1:AdvancedPanel name="升 阶" skinName="AdvancedSkin" visible="false"/>
+		</e:ViewStack>
+		</e:Group>
+	</e:Group>
+	<e:TabBar id="tabBar" dataProvider="{viewStack}" itemRendererSkinName="TabBtnSkin1" horizontalCenter="-140" y="134">
+		<e:layout>
+		<e:HorizontalLayout gap="20"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Group id="equipGrp" y="218" anchorOffsetX="0" anchorOffsetY="0" width="628" horizontalCenter="0">
+		<e:Group y="68" horizontalCenter="0" width="100%">
+		<ns1:ForgeItem id="equip0" skinName="EquipSkin" y="0" left="10"/>
+		<ns1:ForgeItem id="equip1" skinName="EquipSkin" y="0" right="10"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="327" horizontalCenter="0" width="100%">
+		<ns1:ForgeItem id="equip2" skinName="EquipSkin" y="0" left="10"/>
+		<ns1:ForgeItem id="equip3" skinName="EquipSkin" y="0" right="10"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="228" horizontalCenter="0" width="100%">
+		<ns1:ForgeItem id="equip4" skinName="EquipSkin" y="0" left="10"/>
+		<ns1:ForgeItem id="equip5" skinName="EquipSkin" y="0" right="10"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="327" horizontalCenter="0" width="100%">
+		<ns1:ForgeItem id="equip6" skinName="EquipSkin" y="0" left="10"/>
+		<ns1:ForgeItem id="equip8" skinName="EquipSkin" y="0" left="130"/>
+		<ns1:ForgeItem id="equip9" skinName="EquipSkin" right="130"/>
+		<ns1:ForgeItem id="equip7" skinName="EquipSkin" y="0" right="10"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout gap="0" paddingTop="15"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LimitCardSkin" width="750" height="1033" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group verticalCenter="0" horizontalCenter="0">
+		<e:Image source="月卡1_png" x="0" y="0"/>
+		<e:Group x="90" y="448">
+			<e:Button id="getOne" label="抽1次" x="0" y="42" icon="" skinName="Btn007Skin"/>
+			<e:Label text="50钻石 " y="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group x="392" y="448">
+			<e:Button id="getTen" label="抽10次" x="0" y="43" icon="" skinName="Btn007Skin"/>
+			<e:Label text="450钻石 " y="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label id="nextDraw" text="祝君好运!" y="598" textColor="0x41fc05" bold="true" horizontalCenter="0.5"/>
+	</e:Group>
+</e:Skin>

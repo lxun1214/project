@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Win0Skin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0"/>
+	<e:Group width="750" horizontalCenter="0" top="61" bottom="111">
+		<e:Image anchorOffsetX="0" top="0" bottom="0" source="da-ditu" scaleX="-1" left="0" scale9Grid="93,120,283,6"/>
+		<e:Image anchorOffsetX="0" top="0" bottom="0" source="da-ditu" scale9Grid="93,120,283,5" right="0"/>
+		<e:Image id="tt" horizontalCenter="0" y="9"/>
+		<e:Button id="newCloseBtn" label="" x="653" y="0" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="gb_1" source.down="gb_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Button id="newCloseBtn01" label="" bottom="133" horizontalCenter="314">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="re00" source.down="re11"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="newCloseBtn00" label="" y="60" horizontalCenter="313.5" skinName="CloseBtn00">
+	</e:Button>
+</e:Skin>

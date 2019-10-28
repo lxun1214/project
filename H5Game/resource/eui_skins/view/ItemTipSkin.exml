@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemTipSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg" source="圆角矩形-1" scale9Grid="24,22,6,7" height="380" anchorOffsetX="0" width="400"/>
+		<ns1:BaseItem id="item" x="34" y="44" skinName="BaseItemSkin"/>
+		<e:Group x="170.5" y="84">
+			<e:Label id="l0" text="Label" x="0" y="0" size="24" fontFamily="KaiTi" textColor="0xf77307"/>
+			<e:Label id="l1" text="Label" x="0" y="36" size="24" fontFamily="KaiTi" textColor="0xf77307"/>
+			<e:Label id="l2" text="Label" x="0" y="75" size="24" fontFamily="KaiTi" textColor="0xf77307"/>
+			<e:layout>
+				<e:VerticalLayout gap="8"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="l3" text="基础属性:" x="41" y="208" size="24" textColor="0x15f709" fontFamily="KaiTi"/>
+		<e:Label id="l4" text="11" x="94" y="243" anchorOffsetY="0" anchorOffsetX="0" size="24" width="280" lineSpacing="6" textColor="0x0769fc" bold="true" fontFamily="KaiTi"/>
+		<e:BitmapLabel id="l5" x="242" y="37.5" font="power_fnt" text="212121"/>
+		<e:Image x="166.5" y="34" source="power11"/>
+		<e:Button id="btn1" label="确  定" icon="" y="273" skinName="Btn005Skin" horizontalCenter="-90"/>
+		<e:Button id="btn0" label="取  消" icon="" y="273" skinName="Btn005Skin" horizontalCenter="90"/>
+		<e:Button id="btn2" label="确  定" icon="" y="273" horizontalCenter="0" skinName="Btn005Skin"/>
+		<e:BitmapLabel width="20" height="20" x="204" y="69"/>
+		<e:Image x="97" y="192" source="圆角矩形-3"/>
+	</e:Group>
+</e:Skin>

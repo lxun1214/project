@@ -1,0 +1,1 @@
+{"version":3,"file":"StageAward.js","sourceRoot":"","sources":["../../../src/baseUI/activity/StageAward.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,kBAAkB;AAClB;IAAyB,8BAAiB;IACzC;eACC,iBAAO;IACR,CAAC;IACM,mCAAc,GAArB;QAEC,iBAAM,cAAc,WAAE,CAAC;QACvB,IAAI,CAAC,UAAU,GAAG,WAAW,CAAC,WAAW,CAAC;IAC3C,CAAC;IACF,iBAAC;AAAD,CAAC,AATD,CAAyB,iBAAiB,GASzC;AATK,UAAA,UAAU,yBASf,CAAA"}

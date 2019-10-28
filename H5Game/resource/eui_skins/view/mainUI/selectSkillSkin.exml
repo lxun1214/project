@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="selectSkillSkin" width="246" height="284" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image x="0" width="246" anchorOffsetY="0" height="254" y="0" source="圆角矩形-123" scale9Grid="24,22,6,7" anchorOffsetX="0"/>
+	<e:Group id="s" y="20" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="2" requestedRowCount="2"/>
+		</e:layout>
+		<ns1:SkillCompeonent id="skill0" width="102" height="102" x="62" y="25"/>
+		<ns1:SkillCompeonent id="skill1" width="102" height="102" x="145" y="39"/>
+		<ns1:SkillCompeonent id="skill2" width="102" height="102" x="77" y="11"/>
+		<ns1:SkillCompeonent id="skill3" width="102" height="102" x="102" y="63"/>
+	</e:Group>
+	<e:Image id="jt" y="246" source="形状-47" horizontalCenter="0.5"/>
+</e:Skin>

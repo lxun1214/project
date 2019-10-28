@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadUISkinII" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image height="1334" horizontalCenter="0" verticalCenter="0" source="newBg02_jpg"/>
+	<e:ProgressBar id="pro" skinName="ProgressBarSkinII" horizontalCenter="0" verticalCenter="517.5" value="0"/>
+	<e:Label text="努力加载中..." y="1216" horizontalCenter="0" bold="true" fontFamily="KaiTi" textColor="0xf40913"/>
+</e:Skin>

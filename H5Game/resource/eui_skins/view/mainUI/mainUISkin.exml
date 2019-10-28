@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainUISkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16274aed660"/>
+	<e:Group left="0" right="0" top="0" bottom="0" touchEnabled="false">
+		<e:Group top="392" width="109" right="0">
+			<e:Button id="noticeBtn" label="Button" skinName="Btn21Skin" scaleX="1" scaleY="1"/>
+			<e:Button id="actionBtn" label="福利大厅" y="129" anchorOffsetX="0" width="109" skinName="Btn32Skin"/>
+			<e:Button id="taskBtn" label="Button" x="0" y="258" skinName="Btn24Skin" width="109"/>
+		<e:Button id="mailBtn" label="Button" x="0" y="387" skinName="Btn27Skin" width="109"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group bottom="608" left="0">
+		<e:Button id="rankBtn" label="Button" x="0" y="0" skinName="Btn23Skin"/>
+		<e:Button id="shopBtn" label="Button" x="0" y="138" skinName="Btn25Skin"/>
+		<e:layout>
+			<e:VerticalLayout gap="20"/>
+		</e:layout>
+		</e:Group>
+		<e:Group y="189.6" width="750" right="0" height="120">
+			<e:Button id="firstBtn" label="福利大厅" anchorOffsetX="0" width="109" skinName="Btn29Skin" height="109" x="50" y="6"/>
+			<e:Button id="mcBtn" label="福利大厅" anchorOffsetX="0" width="109" skinName="Btn30Skin" height="109" x="169" y="6"/>
+			<e:Button id="mbBtn" label="福利大厅" anchorOffsetX="0" width="109" skinName="Btn31Skin" height="109" x="288" y="6"/>
+		<e:Button id="copyBtn" label="Button" skinName="Btn20Skin" right="238" verticalCenter="0"/>
+		<e:Button id="arenaBtn" label="Button" skinName="Btn22Skin" verticalCenter="0" right="119"/>
+			<e:Button id="reBornBtn" label="重生" anchorOffsetY="0" skinName="Btn28Skin" scaleX="1" scaleY="1" right="0" verticalCenter="0"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="qiehuan" bottom="177" left="0">
+			<e:Button id="mainBtn" anchorOffsetY="0" width="107" height="107" scaleX="1" scaleY="1" skinName="Btn33Skin" x="0" y="0">
+			</e:Button>
+		</e:Group>
+		<e:Button id="exit" label="" skinName="MainBtnSkin" icon="6" left="0" x="0" scaleX="1" scaleY="1" visible="false"/>
+		<e:Group id="challenge" bottom="211" x="319" y="1008" scaleX="1" scaleY="1">
+			<e:Button label="" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="G" source.down="G1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Button id="newsBtn" label="Button" x="0" skinName="Btn26Skin" y="0" scaleX="1" scaleY="1" visible="false"/>
+		<e:Group id="s" height="141" touchEnabled="false" left="0" right="0" anchorOffsetY="0" x="0" scaleX="1" scaleY="1" bottom="0">
+			<ns1:SkillCompeonent id="skill0" width="115" height="138" scaleY="0.8" scaleX="0.8" bottom="0" x="0"/>
+			<ns1:SkillCompeonent id="skill1" width="115" height="138" scaleX="0.8" scaleY="0.8" x="96" bottom="0"/>
+			<ns1:SkillCompeonent id="skill2" width="115" height="138" x="361" scaleX="0.8" scaleY="0.8" bottom="0"/>
+			<ns1:SkillCompeonent id="skill6" width="176" height="138" horizontalCenter="0" bottom="0"/>
+			<ns1:SkillCompeonent id="skill3" width="115" x="550" scaleX="0.8" scaleY="0.8" height="138" bottom="0"/>
+			<ns1:SkillCompeonent id="skill4" width="115" height="138" x="255" scaleX="0.8" scaleY="0.8" bottom="0"/>
+			<ns1:SkillCompeonent id="skill5" width="115" height="138" scaleX="0.8" scaleY="0.8" bottom="0" x="658"/>
+			<e:layout>
+			<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="chatBtn" label="" x="1" y="873">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="gn_0007_组-129" source.down="gn_0007_组-130"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<ns1:PProgress id="pro" y="297" horizontalCenter="0.5" skinName="PProgressSkin"/>
+	<ns1:TopPanel skinName="topSkin" left="0" right="0"/>
+	<e:Group id="roleGroup" touchEnabled="false" left="0" right="0" top="0" anchorOffsetY="0" height="151">
+		<e:Group x="0" top="50">
+			<ns1:RoleIcon skinName="roleIconSkin" x="0" y="0"/>
+			<ns1:VipIcon id="vipBtn" x="126" skinName="vipIconSkin" y="55"/>
+			<e:Group x="226" y="55">
+				<e:Button id="reBtn" label="" x="0" y="0" skinName="Btn000Skin" icon="cz">
+				</e:Button>
+			</e:Group>
+			<e:Group x="101" y="5" anchorOffsetX="0" width="234">
+				<e:Image x="13.5" source="zhanli" scaleX="1" scaleY="1" verticalCenter="1"/>
+				<e:BitmapLabel id="labfight" x="81" text="" font="fightpower_fnt" verticalCenter="0.5"/>
+			</e:Group>
+		</e:Group>
+		<ns1:MapMess id="G2" y="55" skinName="mapMessSkin" right="0"/>
+	</e:Group>
+	<e:Group id="g0" left="0" right="0" bottom="0" visible="false">
+		<e:Image source="xk" scale9Grid="264,10,151,67" y="80" scaleX="1" scaleY="1" left="0" right="0"/>
+		<e:Group anchorOffsetY="0" height="139" anchorOffsetX="0" y="0" width="649" horizontalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="bottom"/>
+			</e:layout>
+			<ns1:Btn01 id="roleBtn" skinName="MainBtnSkin" s0="1" s1="1_1" scaleX="1" scaleY="1" width="119" height="119" bottom="0" left="0"/>
+			<ns1:Btn01 id="bagBtn" skinName="MainBtnSkin" s0="2" s1="2_2" scaleX="1" scaleY="1" width="119" height="119" bottom="0" horizontalCenter="-146"/>
+			<ns1:Btn01 id="riskBtn" skinName="MainBtnSkin" width="151" height="139" s0="7" s1="7_7" scaleX="1" scaleY="1" bottom="0" horizontalCenter="0"/>
+			<ns1:Btn01 id="skillBtn" skinName="MainBtnSkin" s0="5" s1="5_5" scaleX="1" scaleY="1" width="119" height="119" bottom="0" horizontalCenter="146"/>
+			<ns1:Btn01 id="achieveBtn" skinName="MainBtnSkin" s0="8" s1="8_8" scaleX="1" scaleY="1" width="119" height="119" right="0" bottom="0"/>
+		</e:Group>
+		<e:ProgressBar id="exp" skinName="expProgress" bottom="-2" value="100" left="108" right="108"/>
+	</e:Group>
+	
+	
+</e:Skin>

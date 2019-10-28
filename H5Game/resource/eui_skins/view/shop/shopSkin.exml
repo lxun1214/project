@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="shopSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="shop图层-13"/>
+	<e:Group width="650" name="Group" anchorOffsetX="0" anchorOffsetY="0" y="216" height="953" horizontalCenter="0">
+		<e:Scroller id="itemScroller" scrollPolicyH="off" anchorOffsetY="0" width="650" top="0" bottom="0">
+		<e:List id="list" itemRendererSkinName="shopItemSkin" height="9533" anchorOffsetY="0" anchorOffsetX="0" x="-2" y="22">
+			<e:ArrayCollection>
+			<e:Array/>
+			</e:ArrayCollection>
+			<e:layout>
+			<e:TileLayout requestedColumnCount="1" horizontalGap="5" paddingLeft="5" verticalGap="6"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group horizontalCenter="0" top="136" scaleX="0.9" scaleY="0.9">
+		<ns1:ToggleBtn01 id="b0" label="" x="0" y="0" skinName="ToBtn000Skin" s0="道具" s1="道具">
+		</ns1:ToggleBtn01>
+		<ns1:ToggleBtn01 id="b1" label="" x="133" y="0" skinName="ToBtn000Skin" s0="宝石" s1="宝石">
+		</ns1:ToggleBtn01>
+		<ns1:ToggleBtn01 id="b2" label="" x="278" y="0" skinName="ToBtn000Skin" s0="竞技" s1="竞技"/>
+		<ns1:ToggleBtn01 id="b3" label="" x="278" y="0" skinName="ToBtn000Skin" s0="黑市" s1="黑市">
+		</ns1:ToggleBtn01>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

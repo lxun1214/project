@@ -1,0 +1,149 @@
+.ui-header {
+	background: url('../../images/mobile/header.jpg') center center;
+	height: 45px;
+}
+
+.ui-header .ui-btn-up-a {
+	border: 1px solid #fff;
+	background: #fff;
+	font-weight: 700;
+	color: #06C;
+	text-shadow: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2),
+		to(#fff) );
+	background-image: -webkit-linear-gradient(#f2f2f2, #fff);
+	background-image: -moz-linear-gradient(#f2f2f2, #fff);
+	background-image: -ms-linear-gradient(#f2f2f2, #fff);
+	background-image: -o-linear-gradient(#f2f2f2, #fff);
+	background-image: linear-gradient(#f2f2f2, #fff)
+}
+
+.ui-header .ui-btn-up-a:visited,.ui-header .ui-btn-up-a a.ui-link-inherit
+	{
+	color: #09C;
+}
+
+.ui-header .ui-btn-hover-a {
+	border: 1px solid #78b9e1;
+	background: #78b9e1;
+	font-weight: 700;
+	color: #06C !important;
+	text-shadow: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eaf6fc),
+		to(#b1d9f2) );
+	background-image: -webkit-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -moz-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -ms-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -o-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: linear-gradient(#eaf6fc, #b1d9f2)
+}
+
+.ui-header .ui-btn-down-a {
+	border: 1px solid #78b9e1;
+	background: #78b9e1;
+	font-weight: 700;
+	color: #06C !important;
+	text-shadow: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eaf6fc),
+		to(#b1d9f2) );
+	background-image: -webkit-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -moz-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -ms-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: -o-linear-gradient(#eaf6fc, #b1d9f2);
+	background-image: linear-gradient(#eaf6fc, #b1d9f2)
+}
+
+h3 .ui-btn-up-c {
+	border: 1px solid #96d2f5;
+	background: #e1f2fc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1f2fc),
+		to(#b2def8) );
+	background-image: -webkit-linear-gradient(#e1f2fc, #b2def8);
+	background-image: -moz-linear-gradient(#e1f2fc, #b2def8);
+	background-image: -ms-linear-gradient(#e1f2fc, #b2def8);
+	background-image: -o-linear-gradient(#e1f2fc, #b2def8);
+	background-image: linear-gradient(#e1f2fc, #b2def8);
+	text-shadow: none;
+}
+
+h3 .ui-btn-hover-c,.ui-btn-down-c {
+	color: #333;
+	text-shadow: none;
+}
+
+.ui-btn-up-d {
+	font-weight: normal;
+}
+
+h3 .ui-btn-inner {
+	padding: 1em 20px;
+}
+
+.ui-header {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1288c6),
+		color-stop(1, #369fd6) );
+	background-image: -moz-gradient(linear, left top, left bottom, color-stop(0, #1288c6),
+		color-stop(1, #369fd6) );
+	background-image: gradient(linear, left top, left bottom, color-stop(0, #1288c6),
+		color-stop(1, #369fd6) );
+	height: 45px;
+}
+
+.ui-bar-a {
+	border: 1px solid #0d77ab;
+}
+
+.ui-footer .ui-btn {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #339bce),
+		color-stop(1, #2a8fc2) );
+	background-image: -moz-gradient(linear, left top, left bottom, color-stop(0, #339bce),
+		color-stop(1, #2a8fc2) );
+	background-image: gradient(linear, left top, left bottom, color-stop(0, #339bce),
+		color-stop(1, #2a8fc2) );
+}
+
+.ui-footer .ui-btn-active {
+	border: 1px solid #0d77ab;
+	background: #056a9e;
+	background-image: none;
+	-webkit-box-shadow: 2px #000 inset;
+	-moz-box-shadow: 2px #000 inset;
+	box-shadow: 2px #000 inset;
+}
+
+.ui-footer .ui-btn-hover-a {
+	border: 1px solid #0d77ab;
+}
+
+.ui-footer .ui-btn-up-a {
+	border: 1px solid #0d77ab;
+}
+
+.ui-footer .ui-icon {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.myInfo {
+	text-align: center;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	height: 30px;
+	background: #0b7fcf;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#12cbeb),
+		to(#0b7fcf) );
+	background-image: -webkit-linear-gradient(#12cbeb, #0b7fcf);
+	background-image: -moz-linear-gradient(#12cbeb, #0b7fcf);
+	background-image: -ms-linear-gradient(#12cbeb, #0b7fcf);
+	background-image: -o-linear-gradient(#12cbeb, #0b7fcf);
+	background-image: linear-gradient(#12cbeb, #0b7fcf)
+}
+
+#myInfoContent {
+	min-height: 50px;
+	background-color: #f4f4f4;
+	color: #0b7fcf;
+	font-size: 20px;
+	line-height: 40px;
+}

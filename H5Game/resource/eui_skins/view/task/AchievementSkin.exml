@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AchievementSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin0 id="win" skinName="Win0Skin" width="750" horizontalCenter="0" top="0" bottom="0" titleS="task0"/>
+	<e:Scroller anchorOffsetY="0" width="650" horizontalCenter="-2" scrollPolicyV="on" top="139" bottom="160" anchorOffsetX="0">
+		<e:Group>
+		<e:DataGroup id="dg" width="100%">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:DataGroup>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

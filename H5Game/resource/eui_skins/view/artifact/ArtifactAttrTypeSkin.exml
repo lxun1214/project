@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ArtifactAttrTypeSkin" width="310" height="450" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="组-138" horizontalCenter="0" top="0"/>
+	<e:Label id="labTile" text="当前属性加成" y="16" size="22" fontFamily="Microsoft YaHei" textAlign="left" horizontalCenter="0"/>
+	<e:Scroller width="314" height="386" y="58" anchorOffsetX="0" horizontalCenter="0" anchorOffsetY="0">
+		<e:Group>
+			<e:DataGroup id="dg">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="1" columnWidth="220"/>
+				</e:layout>
+			</e:DataGroup>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

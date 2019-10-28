@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StrengSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Component skinName=""/>
+    <ns1:ForgeItem id="item" skinName="EquipSkin" y="411" horizontalCenter="0"/>
+    <ns1:ForgeTypeView id="curr" skinName="ForgeTypeSkin" y="815" anchorOffsetX="0" width="180" horizontalCenter="-165"/>
+	<ns1:ForgeTypeView id="curr0" skinName="ForgeTypeSkin" y="815" anchorOffsetX="0" width="180" horizontalCenter="165"/>
+    <e:Group id="strengGroup" anchorOffsetY="0" height="133" anchorOffsetX="0" width="693" horizontalCenter="0" bottom="170">
+			<e:Group y="19" horizontalCenter="-150">
+				<e:Label id="labNeed1" text="需要金币：" y="0" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" textAlign="center" horizontalCenter="0"/>
+				<e:Button id="equipBtn1" label="强化5次" x="0" y="27" skinName="Btn002Skin"/>
+			</e:Group>
+			<e:Group y="19" horizontalCenter="150">
+				<e:Label id="labNeed2" text="需要金币：" y="0" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" textAlign="center" horizontalCenter="0"/>
+				<e:Button id="equipBtn2" label="强化1次" x="0" y="27" skinName="Btn002Skin"/>
+			</e:Group>
+    </e:Group>
+	<e:Group id="g0" horizontalCenter="0" y="464"/>
+</e:Skin>

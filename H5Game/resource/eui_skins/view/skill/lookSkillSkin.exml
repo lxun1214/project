@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="lookSkillSkin" width="652" height="330" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="ditu_jgg_2" left="0" top="26" right="0" anchorOffsetY="0" scale9Grid="10,10,16,16" bottom="0"/>
+	<e:Image id="jt" x="270" y="0" source="形状-1"/>
+	<e:Group height="67" bottom="82" left="18" right="18">
+		<e:Label id="des" text="" anchorOffsetY="0" anchorOffsetX="0" size="24" left="8" right="8" top="4" bottom="4" verticalAlign="middle" textColor="0xede4b3"/>
+		<e:Image scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="dikuang_ggg" scale9Grid="18,11,19,15"/>
+	</e:Group>
+	<e:Image x="150" y="59" source="图层-812"/>
+	<e:Group id="g2" x="462" y="61">
+		<e:Label text="消耗:" x="10" y="0" size="25" textColor="0xede4b3"/>
+		<e:Image id="l" x="64" y="-12" source="" scaleX="0.4" scaleY="0.4"/>
+		<e:Label id="l6" text="1" x="104" y="4" size="24"/>
+		<e:Button id="btn" label="" y="41" scaleX="1" scaleY="1" skinName="Btn005Skin" icon="技能升级"/>
+	</e:Group>
+	<ns1:SkillIconItemII id="g1" x="14" y="38" skinName="SkillItemSkin"/>
+	<ns1:SkillIconItemII id="g0" x="250" y="38" skinName="SkillItemSkin"/>
+	<e:Label id="l7" text="已达最高等级！" x="250" y="80" textColor="0xf70404" bold="true"/>
+	<e:Button id="btn0" label="使  用" y="260" scaleX="1" scaleY="1" skinName="Btn005Skin" x="242"/>
+</e:Skin>

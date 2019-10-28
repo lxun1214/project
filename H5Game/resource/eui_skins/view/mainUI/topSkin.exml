@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="topSkin" width="750" height="99" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image source="sk" scale9Grid="341,12,60,75" left="0" right="0" y="0"/>
+	<ns1:MoneyPanel id="m2" y="12" skinName="moneySkin" horizontalCenter="220.5"/>
+	<ns1:MoneyPanel id="m3" y="12" skinName="moneySkin" horizontalCenter="-52.5"/>
+	<e:Label id="nn" text="楚中天" x="0" y="4" anchorOffsetX="0" width="146" stroke="0" textAlign="center" bold="true" fontFamily="Microsoft JhengHei" textColor="0x523217"/>
+</e:Skin>

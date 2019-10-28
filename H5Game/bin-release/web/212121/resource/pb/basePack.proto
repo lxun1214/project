@@ -1,0 +1,12 @@
+//基础消息包
+message BaseMessage
+{
+	//消息号
+	required int32 cmd=1;
+	//消息体
+	required bytes body=2;
+}
+
+message ErrorMessage_10{
+	required int32 errorCode = 1;
+}

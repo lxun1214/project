@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EmailSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseWin1 top="0" bottom="0" left="0" right="0" titleS="邮  件" bgH="900" skinName="Win1Skin"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" anchorOffsetY="0" height="900" width="706">
+		<e:Button id="btn0" label="删除已读" x="82" skinName="Btn002Skin" bottom="50"/>
+		<e:Button id="btn1" label="一键领取" x="458" skinName="Btn002Skin" bottom="50"/>
+		<e:Scroller width="652" height="120" y="68.34" anchorOffsetX="0" anchorOffsetY="0" x="32">
+			<e:Group anchorOffsetX="0" anchorOffsetY="0" x="0">
+			<e:DataGroup id="g0">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:DataGroup>
+			</e:Group>
+		</e:Scroller>
+		<e:Label text="邮件只保留15天" horizontalCenter="0" bottom="147"/>
+		<ns1:EmailMessage y="203" skinName="EmailMessageSkin" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

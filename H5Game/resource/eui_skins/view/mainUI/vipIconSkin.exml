@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="vipIconSkin" width="93" height="48" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button label="" skinName="Btn001Skin">
+	</e:Button>
+	<e:Image id="vipImg" anchorOffsetX="0" anchorOffsetY="0" source="v" left="0" verticalCenter="-1.5" touchEnabled="false"/>
+	<e:BitmapLabel id="vip" font="vipLvl_fnt" text="0" verticalCenter="0" touchEnabled="false" horizontalCenter="22.5"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ArtifactItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="128" height="128">
+    <ns1:ItemIcon id="itemIcon" skinName="ItemIconSkin" horizontalCenter="0" verticalCenter="0"/>
+	<!--<e:Label id="labCount" text="999" x="29" y="77" size="22" textAlign="right" anchorOffsetX="0" width="70" fontFamily="Microsoft YaHei"/>
+	<e:Label id="labName" text="物品名称" x="-9" y="108" anchorOffsetX="0" width="137" size="22" textAlign="center" fontFamily="Microsoft YaHei"/>-->
+</e:Skin>

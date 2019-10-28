@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerTypesSkin" width="750" height="1334" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseWin1 skinName="Win2Skin" left="0" right="0" top="0" bottom="0" bgH="800" titleS="详 细 属 性"/>
+    <e:Group anchorOffsetX="0" horizontalCenter="0" width="612" height="800" verticalCenter="0" touchEnabled="false"> 
+			<e:Group x="13" anchorOffsetY="0" anchorOffsetX="0" width="585" top="70" bottom="19">
+				<e:Image source="dikuang_ggg" scaleX="1" scaleY="1" scale9Grid="11,18,20,13" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0"/>
+				<e:Scroller anchorOffsetX="0" anchorOffsetY="0" left="10" right="10" top="10" bottom="10" scrollPolicyH="off" scrollPolicyV="off">
+					<e:Group>
+					<e:Label id="l0" text="" x="10" y="10" lineSpacing="15" size="24" fontFamily="Microsoft YaHei" textColor="0x92422c" bold="true"/>
+					<e:Label id="l1" text="" y="10" lineSpacing="15" x="300" textColor="0x92422c" size="24" fontFamily="Microsoft YaHei" bold="true"/>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+    </e:Group>
+</e:Skin>

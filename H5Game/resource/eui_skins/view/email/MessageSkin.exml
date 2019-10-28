@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MessageSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rc" left="0" top="0" right="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" height="620">
+		<e:Image source="em14" scale9Grid="89,166,538,32" anchorOffsetY="0" top="0" bottom="0" left="0" right="0"/>
+		<e:Group scaleX="1" scaleY="1" anchorOffsetX="0" width="672" horizontalCenter="0" top="54" bottom="27" anchorOffsetY="0">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" scale9Grid="25,42,5,5" anchorOffsetX="0" source="dikuang_ggg" top="12" bottom="0" left="8" right="8"/>
+			<e:Label id="l0" text="玩家名字：xxxx" anchorOffsetX="0" y="33" horizontalCenter="0" textAlign="center"/>
+			<e:Button id="btn0" label="返回" y="448" horizontalCenter="0.5" skinName="Btn002Skin"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" x="37" y="127">
+			<e:Group x="235" y="-352" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" top="0" source="矩形-1"/>
+			<e:Label id="l1" text="22222222222222" x="18" verticalCenter="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:Group x="2" y="47" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝" top="0"/>
+			<e:Label id="l2" text="2222222222" verticalCenter="0" anchorOffsetX="0" x="18"/>
+			</e:Group>
+			<e:Group x="0" y="161">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1" x="0" y="0"/>
+			<e:Label id="l3" text="333333333333" x="18" anchorOffsetX="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group x="41" y="47" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝"/>
+			<e:Label id="l4" text="22" x="18" verticalCenter="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:Group x="11" y="17" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1"/>
+			<e:Label id="l5" text="1" x="18" verticalCenter="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:Group x="1" y="7" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝"/>
+			<e:Label id="l6" text="1" x="18" verticalCenter="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:Group x="1" y="7" scaleX="1" scaleY="1">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1"/>
+			<e:Label id="l7" text="1" x="18" verticalCenter="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:layout>
+			<e:VerticalLayout gap="10"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="80" anchorOffsetX="0" anchorOffsetY="0" x="589" y="127">
+			<e:Group x="11" y="17" scaleX="1" scaleY="1" width="100%">
+			<e:Image touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1" width="100%"/>
+			<e:Label id="l8" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="21" y="27" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝"/>
+			<e:Label id="l9" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="31" y="37" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1"/>
+			<e:Label id="l10" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="41" y="47" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝"/>
+			<e:Label id="l11" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="11" y="17" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1"/>
+			<e:Label id="l12" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="1" y="7" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1-拷贝"/>
+			<e:Label id="l13" text="" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:Group width="100%" x="1" y="7" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scale9Grid="25,13,5,84" touchEnabled="false" anchorOffsetY="0" scaleX="1" scaleY="1" source="矩形-1"/>
+			<e:Label id="l14" text="" x="18" verticalCenter="0" anchorOffsetX="0" right="18" width="44" textAlign="center"/>
+			</e:Group>
+			<e:layout>
+			<e:VerticalLayout gap="10"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="信  息" y="12" textColor="0x774919" bold="true" textAlign="center" x="319"/>
+	</e:Group>
+</e:Skin>

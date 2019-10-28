@@ -1,0 +1,382 @@
+{
+	"groups": [
+		{
+			"keys": "mainUI_json,resCommon_json,power_png,fightpower_fnt,fightpower_png,power_fnt,def_json,sysFont_png,sysFont_fnt,fightFontII_png,fightFontII_fnt",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "res/power.fnt",
+			"type": "font",
+			"name": "power_fnt"
+		},
+		{
+			"url": "res/power.png",
+			"type": "image",
+			"name": "power_png"
+		},
+		{
+			"url": "res/sysFont.fnt",
+			"type": "font",
+			"name": "sysFont_fnt"
+		},
+		{
+			"url": "res/sysFont.png",
+			"type": "image",
+			"name": "sysFont_png"
+		},
+		{
+			"url": "res/vipLvl.fnt",
+			"type": "font",
+			"name": "vipLvl_fnt"
+		},
+		{
+			"url": "res/vipLvl.png",
+			"type": "image",
+			"name": "vipLvl_png"
+		},
+		{
+			"url": "res/fightpower.fnt",
+			"type": "font",
+			"name": "fightpower_fnt"
+		},
+		{
+			"url": "res/fightpower.png",
+			"type": "image",
+			"name": "fightpower_png"
+		},
+		{
+			"url": "res/offline.json",
+			"type": "sheet",
+			"name": "offline_json",
+			"subkeys": "off12,off13,前往激活"
+		},
+		{
+			"url": "res/player.json",
+			"type": "sheet",
+			"name": "player_json",
+			"subkeys": "pbg0,pbg1,power11,xiang_1,xiang_2,神器,锻造"
+		},
+		{
+			"url": "res/result.json",
+			"type": "sheet",
+			"name": "result_json",
+			"subkeys": "result11,result12,矩形-5-拷贝"
+		},
+		{
+			"url": "res/rank.json",
+			"type": "sheet",
+			"name": "rank_json",
+			"subkeys": "biaoqian_0000_竞技榜,biaoqian_0001_土豪榜,biaoqian_0002_等级榜,biaoqian_0003_战力榜,rank2,rank3,rankI"
+		},
+		{
+			"url": "res/resCommon.json",
+			"type": "sheet",
+			"name": "resCommon_json",
+			"subkeys": "LoadingDefaultBody,anniu_1,anniu_10,anniu_13,anniu_14,anniu_15,anniu_2,anniu_20,anniu_3,anniu_30,anniu_4,anniu_40,anniu_5,anniu_6,buyTip,da-ditu,da-ditu1,dikuang_ggg,ditu_jgg_2,em14,fb7,gb_1,gb_2,gou,gouBg,kuang_jgg11,pp0,pp1,re00,re11,red,star1,star2,suo,suxing_ggg,sx_1,yc_1,yc_2,图层-812,圆角矩形-1,圆角矩形-23,圆角矩形-3,组-131,组-132,组-138,组-80-拷贝-3,组-80-拷贝-4"
+		},
+		{
+			"url": "res/pvp.json",
+			"type": "sheet",
+			"name": "pvp_json",
+			"subkeys": "pvp01,pvp03,pvp07,pvp08,pvp13"
+		},
+		{
+			"url": "res/shop.json",
+			"type": "sheet",
+			"name": "shop_json",
+			"subkeys": "+,+1,-,-1,shop5,确定,竞技,购买,道具,领取,黑市"
+		},
+		{
+			"url": "res/skill.json",
+			"type": "sheet",
+			"name": "skill_json",
+			"subkeys": "图层-3,圆角矩形-123,形状-1,形状-47,技能升级,矩形-1-拷贝12,矩形-1-拷贝13"
+		},
+		{
+			"url": "res/recharge.json",
+			"type": "sheet",
+			"name": "recharge_json",
+			"subkeys": "bsaa,eItemBg,new"
+		},
+		{
+			"url": "res/smelt.json",
+			"type": "sheet",
+			"name": "smelt_json",
+			"subkeys": "sezhi_0000s_0000_暗金,sezhi_0000s_0001_紫色,sezhi_0000s_0002_黄色,sezhi_0000s_0003_蓝色,sezhi_0000s_0004_绿色,sezhi_0000s_0005_自动,一键容量,熔炼1"
+		},
+		{
+			"url": "res/title.json",
+			"type": "sheet",
+			"name": "title_json",
+			"subkeys": "beibao11,cztitle,fbtitle,fltitle,jjctitle,phbtitle,shop图层-13,skillTitle,t_3,t_5,t_6,t_8,task0,task05,vipti,图层-12"
+		},
+		{
+			"url": "res/systemBtn.json",
+			"type": "sheet",
+			"name": "systemBtn_json",
+			"subkeys": "1,1_1,2,2_2,5,5_5,7,7_7,8,8_8,c,c1,f,f1,gn_0007_组-115,gn_0007_组-116,gn_0007_组-117,gn_0007_组-118,gn_0007_组-119,gn_0007_组-120,gn_0007_组-121,gn_0007_组-122,gn_0007_组-129,gn_0007_组-130,mb_1,mb_10,mb_2,mb_20,mb_3,mb_30,mb_4,mb_40,mb_5,mb_50,mb_6,mb_60,mb_7,mb_70,mb_8,mb_80,tb_dikuang_1"
+		},
+		{
+			"url": "res/achievement.json",
+			"type": "sheet",
+			"name": "achievement_json",
+			"subkeys": "dacheng,dacheng1,主线,圆角矩形-5,日常"
+		},
+		{
+			"url": "res/VIP.json",
+			"type": "sheet",
+			"name": "VIP_json",
+			"subkeys": "v_strip1,v_strip2,vip矩形-3,组-140,组-141"
+		},
+		{
+			"url": "res/artifact.json",
+			"type": "sheet",
+			"name": "artifact_json",
+			"subkeys": "升级,激活"
+		},
+		{
+			"url": "res/bag.json",
+			"type": "sheet",
+			"name": "bag_json",
+			"subkeys": "quality_10,quality_11,quality_12,quality_13,quality_14,quality_15,宝石,熔炼,物品,装备"
+		},
+		{
+			"url": "res/create.json",
+			"type": "sheet",
+			"name": "create_json",
+			"subkeys": "create05,create06,create07,create08,sex1,sex11,sex2,sex22"
+		},
+		{
+			"url": "res/activity.json",
+			"type": "sheet",
+			"name": "activity_json",
+			"subkeys": "activity2,activity3,activity4,activity6,biaoqian_0004_兑换,duihaun,huodong2"
+		},
+		{
+			"url": "res/def.json",
+			"type": "sheet",
+			"name": "def_json",
+			"subkeys": "border,button_down,button_up,checkbox_select_disabled,checkbox_select_down,checkbox_select_up,checkbox_unselect,handle,header,off,on,radiobutton_select_disabled,radiobutton_select_down,radiobutton_select_up,radiobutton_unselect,roundthumb,selected,thumb,thumb_pb,track,track_pb,track_sb,tracklight"
+		},
+		{
+			"url": "res/email.json",
+			"type": "sheet",
+			"name": "email_json",
+			"subkeys": "em15,矩形-1,矩形-1-拷贝,矩形-14"
+		},
+		{
+			"url": "res/gem.json",
+			"type": "sheet",
+			"name": "gem_json",
+			"subkeys": "bq_0000_靴子,bq_0001_腰带,bq_0002_护腕,bq_0003_戒指,bq_0004_吊坠,头盔,武器,胸甲"
+		},
+		{
+			"url": "res/mainUI.json",
+			"type": "sheet",
+			"name": "mainUI_json",
+			"subkeys": "01,02,03,G,G1,a,boss,cz,hp0,hp1,hp2,jbbg,jyt_1,rw_1,rw_2,sk,v,ww1,ww2,xk,zengjia,zengjia2,zhanli"
+		},
+		{
+			"url": "res/login.json",
+			"type": "sheet",
+			"name": "login_json",
+			"subkeys": "1_0000_ 1,1_0000_ 2,login0,login01,login03,login05,login06,流畅,火爆"
+		},
+		{
+			"url": "res/gainItem.json",
+			"type": "sheet",
+			"name": "gainItem_json",
+			"subkeys": "gainItem000,gainItem001,gainItem002,gainItem003,gainItem1,gainItem3"
+		},
+		{
+			"url": "res/other/a1001.png",
+			"type": "image",
+			"name": "a1001_png"
+		},
+		{
+			"url": "res/other/a1002.png",
+			"type": "image",
+			"name": "a1002_png"
+		},
+		{
+			"url": "res/other/a1004.png",
+			"type": "image",
+			"name": "a1004_png"
+		},
+		{
+			"url": "res/other/a1005.png",
+			"type": "image",
+			"name": "a1005_png"
+		},
+		{
+			"url": "res/other/create04.png",
+			"type": "image",
+			"name": "create04_png"
+		},
+		{
+			"url": "res/other/ditu.png",
+			"type": "image",
+			"name": "ditu_png"
+		},
+		{
+			"url": "res/other/fb4.png",
+			"type": "image",
+			"name": "fb4_png"
+		},
+		{
+			"url": "res/other/fb5.png",
+			"type": "image",
+			"name": "fb5_png"
+		},
+		{
+			"url": "res/other/fb6.png",
+			"type": "image",
+			"name": "fb6_png"
+		},
+		{
+			"url": "res/other/newBg01.jpg",
+			"type": "image",
+			"name": "newBg01_jpg"
+		},
+		{
+			"url": "res/other/pvp0.png",
+			"type": "image",
+			"name": "pvp0_png"
+		},
+		{
+			"url": "res/other/月卡1.png",
+			"type": "image",
+			"name": "月卡1_png"
+		},
+		{
+			"url": "res/other/月卡13.png",
+			"type": "image",
+			"name": "月卡13_png"
+		},
+		{
+			"url": "res/other/组-140.png",
+			"type": "image",
+			"name": "组-140_png"
+		},
+		{
+			"url": "res/other/组-14120.png",
+			"type": "image",
+			"name": "组-14120_png"
+		},
+		{
+			"url": "res/other/组-4.png",
+			"type": "image",
+			"name": "组-4_png"
+		},
+		{
+			"url": "res/other/组-44.png",
+			"type": "image",
+			"name": "组-44_png"
+		},
+		{
+			"url": "res/other/组-5.png",
+			"type": "image",
+			"name": "组-5_png"
+		},
+		{
+			"url": "res/other/组-52.png",
+			"type": "image",
+			"name": "组-52_png"
+		},
+		{
+			"url": "res/other/首充.png",
+			"type": "image",
+			"name": "首充_png"
+		},
+		{
+			"url": "res/other/h_2.png",
+			"type": "image",
+			"name": "h_2_png"
+		},
+		{
+			"url": "res/other/h_1.png",
+			"type": "image",
+			"name": "h_1_png"
+		},
+		{
+			"url": "res/sound/bgm.mp3",
+			"type": "sound",
+			"name": "bgm_mp3"
+		},
+		{
+			"url": "res/sound/butt0n.mp3",
+			"type": "sound",
+			"name": "butt0n_mp3"
+		},
+		{
+			"url": "res/other/欢迎界面.png",
+			"type": "image",
+			"name": "欢迎界面_png"
+		},
+		{
+			"url": "res/welcome.json",
+			"type": "sheet",
+			"name": "welcome_json",
+			"subkeys": "组-46,组-47"
+		},
+		{
+			"url": "res/forge.json",
+			"type": "sheet",
+			"name": "forge_json",
+			"subkeys": "bq_0005_升阶,bq_0006_强化"
+		},
+		{
+			"url": "res/chat.json",
+			"type": "sheet",
+			"name": "chat_json",
+			"subkeys": "xx_0000_系统,xx_0001_世界,xx_0002_好友,发送,圆角矩形-172,椭圆-1"
+		},
+		{
+			"url": "res/other/human1.png",
+			"type": "image",
+			"name": "human1_png"
+		},
+		{
+			"url": "res/other/human2.png",
+			"type": "image",
+			"name": "human2_png"
+		},
+		{
+			"url": "res/fightFontII.fnt",
+			"type": "font",
+			"name": "fightFontII_fnt"
+		},
+		{
+			"url": "res/fightFontII.png",
+			"type": "image",
+			"name": "fightFontII_png"
+		},
+		{
+			"url": "res/批量遍历压缩缩放png图片.zsfl",
+			"type": "bin",
+			"name": "批量遍历压缩缩放png图片_zsfl"
+		},
+		{
+			"url": "res/other/jdt.png",
+			"type": "image",
+			"name": "jdt_png"
+		},
+		{
+			"url": "res/other/jdt1.png",
+			"type": "image",
+			"name": "jdt1_png"
+		},
+		{
+			"url": "res/other/newBg02.jpg",
+			"type": "image",
+			"name": "newBg02_jpg"
+		},
+		{
+			"url": "res/other/批量遍历压缩缩放png图片.zsfl",
+			"type": "bin",
+			"name": "批量遍历压缩缩放png图片_zsfl"
+		}
+	]
+}

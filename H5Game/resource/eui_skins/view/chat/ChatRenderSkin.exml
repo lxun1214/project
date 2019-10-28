@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatRenderSkin" width="420" height="108" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="ln" text="胜者为王:" anchorOffsetY="0" height="26" anchorOffsetX="0" width="115" fontFamily="KaiTi" size="24" textColor="0x023bf9" bold="true" x="89" y="2"/>
+	<e:Image x="88" y="32" source="圆角矩形-172" scale9Grid="40,9,244,57"/>
+	<e:Label id="ld" text="什么啊啊什什么啊啊什什么啊啊什什么啊啊什什么啊啊" x="114" y="38" anchorOffsetY="0" height="64" anchorOffsetX="0" width="292" textColor="0x02fc41" fontFamily="KaiTi" size="24" lineSpacing="5"/>
+	<e:Group x="0" y="0">
+		<e:Group id="g0" scaleX="0.7" scaleY="0.7" y="85" horizontalCenter="0">
+			<e:Image id="vipImg" anchorOffsetX="0" anchorOffsetY="0" source="v" touchEnabled="false" y="0" x="0"/>
+			<e:BitmapLabel id="vip" font="vipLvl_fnt" text="10" touchEnabled="false" x="45.75" y="1"/>
+		</e:Group>
+		<e:Image source="椭圆-1" y="0" x="0"/>
+		<e:Image id="icon" verticalCenter="-10" width="120" height="123" anchorOffsetY="0" x="7" scaleX="0.6" scaleY="0.6" source=""/>
+	</e:Group>
+</e:Skin>

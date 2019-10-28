@@ -1,0 +1,72 @@
+.sysLogin {
+	background-image: url(../../images/mobile/login_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nsrLogin {
+	background: url('../../images/mobile/login_back.jpg') 60% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ui-content {
+	padding: 10% 20%;
+	text-align: center;
+	background: none;
+}
+
+.mobile_footer {
+	position: absolute;
+	bottom: 10;
+	width: 100%;
+	text-align: center;
+}
+
+.ui-corner-all,.ui-btn-corner-all {
+	width: 100%;
+}
+
+div.ui-input-text {
+	width: 100%;
+}
+
+.errorDiv {
+	-webkit-box-shadow: 0 0 12px red;
+	box-shadow: 0 0 12px red;
+}
+
+label.error {
+	background: url("") no-repeat 0 0;
+	padding-left: 0px;
+	float:left;
+}
+
+#loginDiv {
+	padding: 15px 30px;
+	background: rgba(250, 250, 250, 0.5);
+	margin-top: 20%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+div.ui-input-text {
+	padding: 0px;
+	padding-left:4px;
+}
+
+#loginDiv .ui-corner-all {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#loginDiv .ui-shadow-inset {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.back {
+	color: #fff;
+	font-size: 14px;
+}

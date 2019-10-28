@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TabBtnSkin1" width="170" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down,disabled"
+        includeIn="down" height.down="76" width.down="170" height.disabled="76" width.disabled="170">
+    <e:Image pixelHitTest="true" horizontalCenter="0" verticalCenter="0" source="anniu_10" source.down="anniu_10" source.up="anniu_10"/>
+    <e:Image id="selectIcon" horizontalCenter="0" verticalCenter="0" source="anniu_30" source.down="anniu_30" source.up=""/>
+    <e:Image id="iconDisplay" pixelHitTest="true"   x.disabled="8"  horizontalCenter="0" verticalCenter="0" horizontalCenter.down="-1.5" verticalCenter.down="0" source="" source.up="" source.down=""/>
+	<e:Label id="textDisplay" text="{data}" anchorOffsetX="0" width="170" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="red" source="red" right="0" top="0" visible="false"/>
+</e:Skin>

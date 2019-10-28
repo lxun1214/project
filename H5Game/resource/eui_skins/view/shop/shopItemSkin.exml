@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="shopItemSkin" width="650" height="175" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <e:Group anchorOffsetX="0" top="0" bottom="0" left="0" right="0">
+        <e:Image left="0" right="0" anchorOffsetY="0" top="0" bottom="0" source="kuang_jgg11" scale9Grid="32,31,4,7"/>
+        <ns1:ItemIcon id="item" skinName="ItemIconSkin" x="44" verticalCenter="0.5"/>
+        <e:Label id="labName" text="道具名称" x="176" y="32" fontFamily="Microsoft YaHei" size="30" textAlign="left" textColor="0xf7a504" strokeColor="0x894e2a" stroke="2"/>
+        <e:Button id="buyBtn" label="" x="426" icon="购买" verticalCenter="0.5" skinName="Btn005Skin"/>
+			<e:Group x="167" y="67" anchorOffsetY="0" height="64">
+				<e:Image x="0" y="0" source="shop5" scale9Grid="65,32,14,11" anchorOffsetY="0" height="60" anchorOffsetX="0" width="225"/>
+				<ns1:AwardShow id="lbMoney" x="13" y="10" skinName="AwardShowSkin"/>
+			</e:Group>
+			<e:Label id="c" text="剩余xxx购买次数" x="421" anchorOffsetX="0" verticalCenter="53" textColor="0xfc0505" textAlign="left" size="25" verticalAlign="justify" stroke="0.1"/>
+    </e:Group>
+</e:Skin>
